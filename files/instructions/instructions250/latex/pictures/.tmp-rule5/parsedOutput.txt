@@ -1,0 +1,2 @@
+./rule5.tex:10: Package xcolor Error: Undefined color `c'.
+./rule5.tex:10:  ==> Fatal error occurred, no output PDF file produced!

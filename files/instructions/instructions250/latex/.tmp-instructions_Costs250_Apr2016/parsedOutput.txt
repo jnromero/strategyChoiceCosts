@@ -1,0 +1,2 @@
+./instructions_Costs250_Apr2016.tex:83: Undefined control sequence.
+./instructions_Costs250_Apr2016.tex:83:  ==> Fatal error occurred, no output PD

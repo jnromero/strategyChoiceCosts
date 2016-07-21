@@ -1,0 +1,19 @@
+\documentclass[11pt]{article}
+\usepackage{geometry,amsmath,amssymb,datetime,color,everypage,lastpage,multirow,textpos,nicefrac,setspace,tikz}
+\usetikzlibrary{calc,arrows,automata,shapes.misc,shapes.arrows,chains,matrix,positioning,scopes,decorations.pathmorphing,shadows}
+
+
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{2mm}\begin{document}
+
+\begin{tikzpicture}\definecolor{c}{RGB}{255,255,0}\definecolor{d}{RGB}{142,214,255}\draw [fill=c,opacity=1] (0.00,0.00) -- (0.00,1.00) -- (1.00,1.00) -- (1.00,0.00) -- (0.00,0.00);
+\node at (0.50,.5) {\small W};\draw [] (0.00,0.00) -- (0.00,1.00) -- (1.00,1.00) -- (1.00,0.00) -- (0.00,0.00);
+\draw [fill=d,opacity=1] (0.00,1.00) -- (0.00,2.00) -- (1.00,2.00) -- (1.00,1.00) -- (0.00,1.00);
+\node at (0.50,1.5) {\small Y};\draw (0.00,1.00) -- (0.00,2.00) -- (1.00,2.00) -- (1.00,1.00) -- (0.00,1.00);
+\draw [fill=c,opacity=1] (1.00,1.00) -- (1.00,2.00) -- (2.00,2.00) -- (2.00,1.00) -- (1.00,1.00);
+\node at (1.50,1.5) {\small W};\draw (1.00,1.00) -- (1.00,2.00) -- (2.00,2.00) -- (2.00,1.00) -- (1.00,1.00);
+\end{tikzpicture}
+
+
+\end{document}
