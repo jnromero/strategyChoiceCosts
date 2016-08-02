@@ -979,8 +979,8 @@ function drawHistoryPeriod(type,period,row){
     s=createDiv(type+"_history_square_"+period+"_"+row);
     s.className ="qSquare square";
     if(type=="hyp" || type=="hypActual" && period<16){
-        if(window.hypHistory[period-1][row]==0){s.className ="wSquare square";}
-        else if(window.hypHistory[period-1][row]==1){s.className ="ySquare square";}
+        if(window.hypHistoryList[period-1][row]==0){s.className ="wSquare square";}
+        else if(window.hypHistoryList[period-1][row]==1){s.className ="ySquare square";}
         var pf = partial(changeSquareHyp,period,row);
         //s.addEventListener("mouseover",pf);
         s.addEventListener("mousedown",pf);
@@ -1032,8 +1032,8 @@ function displayHypHistory(incoming){
 
         complete=1;
         for(k=15-longest+1;k<15;k++){
-            if(window.hypHistory[k][0]==-1){complete=0;}
-            if(window.hypHistory[k][1]==-1){complete=0;}
+            if(window.hypHistoryList[k][0]==-1){complete=0;}
+            if(window.hypHistoryList[k][1]==-1){complete=0;}
         }
 
         if(complete==1){//0){
@@ -1109,13 +1109,13 @@ function changeSquareHyp(period,player){
         newChoice=1;
     }
 
-    window.hypHistory[period-1][player]=newChoice;
+    window.hypHistoryList[period-1][player]=newChoice;
     updateHypHistoryOnServer();
     displayHypHistory({"nothing":"nothing"});
 }
 
 function updateHypHistoryOnServer(){
-    var message={"type":"hypotheticalHistory","history":window.hypHistory,"historyNumber":window.hypTab};
+    var message={"type":"hypotheticalHistory","history":window.hypHistoryList,"historyNumber":window.hypTab};
     sock.send(JSON.stringify(message));
 }
 
@@ -1452,16 +1452,16 @@ function drawHypTabs(){
 
 
 function showHypothetical(incoming){
-    window.hypHistory=incoming['hypHistory'];
+    window.hypHistoryList=incoming['hypHistory'];
     window.hypHistories=incoming['totalHypHistories'];
     window.hypTab=incoming['hypHistoryNumber'];
 }
 
 function hypHistory(incoming){
-    window.hypHistory=incoming['hypHistory'];
+    window.hypHistoryList=incoming['hypHistory'];
     window.hypHistories=incoming['totalHypHistories'];
     window.hypTab=incoming['hypHistoryNumber'];
-    window.hypHistoryComplete=incoming['hypHistoryComplete'];
+    window.hypHistoryListComplete=incoming['hypHistoryComplete'];
     drawHistory("hyp");
     drawHistory("hypActual");
     drawHypTabs();
@@ -1729,7 +1729,7 @@ function updateRules(incoming){
         if(thisStatus["page"]=="hypothetical"){
             drawRules("hyp");            
             drawRules("hypActual");    
-            if(window.hypHistory!=undefined){updateHypHistoryOnServer();}
+            if(window.hypHistoryList!=undefined){updateHypHistoryOnServer();}
         }  
         else{
             drawRules("regular");            

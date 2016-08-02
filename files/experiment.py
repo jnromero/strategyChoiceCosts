@@ -3,7 +3,6 @@ import time
 import json
 import random
 import math
-import functions
 from operator import itemgetter
 
 from twisted.internet import reactor
@@ -21,7 +20,6 @@ class experimentClass():
       "do init stuff"
       self.config=config
       self.setParameters()
-      self.packageFolder=self.config['webServerRoot']+self.config['packageFolder']
    # - store data in self.data[subjectID] which is a Subject object (defined below)
    # - send messages like self.customMessage(subjectID,msg)
    # - list of all subjects at self.data['subjectIDs']
@@ -54,7 +52,7 @@ class experimentClass():
       self.data['freeStageLengths']=[20,22, 6, 6, 45, 16, 3, 24, 18, 12, 48]
 
       #testing
-      self.data['showPayoffTime']=60
+      self.data['showPayoffTime']=6
       self.data['hypotheticalPeriodLength']=600
       self.data['totalMatches']=10#not including practice
       self.data['preStageLengths']=[20,60,60,60,60,60,60,60,60,60,60,60]
@@ -1105,10 +1103,6 @@ class Rule:
       self.periodsUsed[match].append(period)
 
 
-if __name__ == "__main__":
-   # stuff only to run when not called via 'import' here
-   "main()"
-
 
 
 class monitorClass():
@@ -1196,5 +1190,9 @@ class monitorClass():
 
       self.data['monitorTasks']=taskList
 
+
+if __name__ == "__main__":
+   # stuff only to run when not called via 'import' here
+   "main()"
 
 
