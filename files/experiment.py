@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys
 import time
 import json
@@ -28,7 +29,7 @@ class experimentClass():
    def setParameters(self):
 
       self.nonPickleData={}
-      print "setPreliminaries"
+      print("setPreliminaries")
       self.data['stopTick']=0
       self.data['elapsed']=0
       #currentTime,startTime,totalTime,jsTime
@@ -80,7 +81,7 @@ class experimentClass():
       # self.data['postStageLengths']=[10,10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
 
       filename=self.config['webServerRoot']+self.config['currentExperiment']+'files/quiz.pickle'
-      file = open(filename,'r')
+      file = open(filename,'rb')
       self.data['quizQuestions']=pickle.load(file)
       file.close() 
 
@@ -115,7 +116,7 @@ class experimentClass():
 
 
    def setMatchings(self):
-      print "setMatchings - do nothing"
+      print("setMatchings - do nothing")
 
    def setMatchingsByQuiz(self):
       goodQuiz=[]
@@ -146,11 +147,11 @@ class experimentClass():
          self.data[sid].group="low"
          self.data[sid].timePerQuestion=4
          self.data[sid].timeUntilWarning=1
-      print "matching set!!!!!!!"
+      print("matching set!!!!!!!")
 
 
    def makeMatching(self):
-      print "makeMatching"
+      print("makeMatching")
       if self.data['matchType']=="trial":
          #trail - creat Dummy clients
          for sid in self.data['subjectIDs']:
@@ -218,7 +219,7 @@ class experimentClass():
          if len(self.data[sid].currentRules)==0 or len(self.data[sid].firstPeriodRules)==0:
             allDefaultRulesSet=0
       if allDefaultRulesSet==0:
-         print "not all default Rules Set"
+         print("not all default Rules Set")
          self.nextPeriodCall=reactor.callLater(2,self.startMatch)
       else:
          self.data['startTime']=time.time()
@@ -269,7 +270,7 @@ class experimentClass():
       return history
 
    def confirmedMatchOver(self,message,client):
-      print "confirmed Match Over"
+      print("confirmed Match Over")
       subjectID=client.subjectID
       self.data[subjectID].matchRunning=0
       moveToNextMatch=1
@@ -347,7 +348,7 @@ class experimentClass():
       self.data[subjectID].opponentHistory[self.data['currentMatch']].append(theirChoice)
       index=2*myChoice+theirChoice
       thisPayoff=self.data[subjectID].gameTable[self.data['currentMatch']][index]
-      print "Finish PEriod Choice",subjectID,self.data[subjectID].currentPeriod,[myChoice,theirChoice],thisPayoff
+      print("Finish PEriod Choice %s,%s,%s,%s"%(subjectID,self.data[subjectID].currentPeriod,[myChoice,theirChoice],thisPayoff))
       if self.data['matchType']=="regular" or self.data['matchType']=="regularDemo":
          self.data[subjectID].matchPayoffs[self.data['currentMatch']]=[x+y for x,y in zip(self.data[subjectID].matchPayoffs[self.data['currentMatch']],thisPayoff)]
          self.data[subjectID].totalPayoffs=[x+y for x,y in zip(self.data[subjectID].totalPayoffs,thisPayoff)]
@@ -529,7 +530,7 @@ class experimentClass():
       for sid in self.data['subjectIDs']:
          self.data[sid].status={"page":"defaultNotSet","match":1}
          self.updateStatus(sid)
-      print "call reactor later to start play"
+      print("call reactor later to start play")
       self.nextPeriodCall=reactor.callLater(self.data['hypotheticalPeriodLength'],self.startPreMatch)
 
 
@@ -981,7 +982,7 @@ class subjectClass():
       elif len(thisRule)==1:
          out=thisRule[0]
       else:
-         print "something weird is happening.  Apparently there are two of the same rules in the set?!?!?!?!?!?!?!?!"
+         print("something weird is happening.  Apparently there are two of the same rules in the set?!?!?!?!?!?!?!?!")
       return out
 
    def deleteRule(self,ruleList,match,time,updateType):
@@ -991,13 +992,13 @@ class subjectClass():
             self.currentRules.remove(thisRule)
             thisRule.deletedTimes.append([match,time])
          else:
-            print "TRYING TO DELETE RULE NOT IN LIST!!!!!!!!!"
+            print("TRYING TO DELETE RULE NOT IN LIST!!!!!!!!!")
       elif updateType=="hyp":
          if thisRule in self.currentHypRules:
             self.currentHypRules.remove(thisRule)
             thisRule.hypDeletedTimes.append([match,time])
          else:
-            print "TRYING TO DELETE RULE NOT IN LIST!!!!!!!!!"
+            print("TRYING TO DELETE RULE NOT IN LIST!!!!!!!!!")
 
    def addRule(self,ruleList,match,time,updateType):
       thisRule=self.getRuleByList(ruleList)
@@ -1012,13 +1013,13 @@ class subjectClass():
             newRule.addedTimes.append([match,time])
             self.currentRules.append(newRule)
          else:
-            print "TRYING TO ADD RULE ALREADY IN LIST!!!!!!!!!"
+            print("TRYING TO ADD RULE ALREADY IN LIST!!!!!!!!!")
       elif updateType=="hyp":
          if newRule not in self.currentHypRules:
             newRule.hypAddedTimes.append([match,time])
             self.currentHypRules.append(newRule)
          else:
-            print "TRYING TO ADD RULE ALREADY IN LIST!!!!!!!!!"
+            print("TRYING TO ADD RULE ALREADY IN LIST!!!!!!!!!")
 
    def setDefaultRule(self,rule,match,time,updateType):
       thisRule=self.getRuleByList([[rule]])#either 0 or 1
@@ -1128,8 +1129,8 @@ class monitorClass():
             this.append("$%.02f"%(totalPay))
             table.append(this)
       except Exception as thisExept: 
-         print "can't get table at this time because:"
-         print thisExept
+         print("can't get table at this time because:")
+         print(thisExept)
       return table,titles
    
    def monitorTasks(self):

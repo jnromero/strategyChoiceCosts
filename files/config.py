@@ -6,15 +6,13 @@ scriptPath=os.path.dirname(os.path.realpath(__file__))
 
 def defaultSettings(location,configFile,serverStartString):
 	config={}
+
 	config['packageFolder']="/steep/"
 	config['currentExperiment']="/strategyChoiceCosts/"
-	config['instructionsFolder']="/files/instructions/instructions250/"
-	config['instructionsTexFile']="/latex/instructions_Costs250_Apr2016.tex"
-	config["quiz"]="True"
 	config['screenServerPort']=1234
 
-	if location=="local":
-		config['webServerRoot']="/Users/jnr/Dropbox/Sites/jnromero.com/Experiments/"
+	if location=="myComputer":
+		config['webServerRoot']="/Users/myUsername/experiments/"
 		config['serverType']="regularExperiment"	
 		config['serverPort']=2345
 		config['webSocketPort']=3456
@@ -22,10 +20,23 @@ def defaultSettings(location,configFile,serverStartString):
 		config["domain"]="http://"+ip+":"+str(config['serverPort'])
 		config["websocketURL"]="ws://"+ip+":"+str(config['webSocketPort'])
 		config["screenServer"]="http://"+ip+":"+str(config['screenServerPort'])
+	# elif location=="labComputer":
+	# 	config['webServerRoot']="/Users/labAdmin/myUsername/experiments/"
+	# 	config['serverType']="regularExperiment"	
+	# 	config['serverPort']=4567
+	# 	config['webSocketPort']=5678
+	# 	ip="12.345.67.89"
+	# 	config["domain"]="http://"+ip+":"+str(config['serverPort'])
+	# 	config["websocketURL"]="ws://"+ip+":"+str(config['webSocketPort'])
+	# 	config["screenServer"]="http://"+ip+":"+str(config['screenServerPort'])
+
 	config["location"]=location
+
 	config=setOtherFileLocations(config,serverStartString)
 	writeJavascriptConfigFile(config,configFile)
 	return config
+
+
 
 def setOtherFileLocations(config,serverStartString):
 	config['dataFolder']=config['currentExperiment']+"/data/"+serverStartString+"/"
@@ -45,4 +56,3 @@ def writeJavascriptConfigFile(config,configFile):
 	file = open(config['configJsPath'],'w')
 	file.writelines(string)
 	file.close() 
-
