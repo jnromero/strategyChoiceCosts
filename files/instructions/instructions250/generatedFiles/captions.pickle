@@ -1,0 +1,1767 @@
+(lp0
+(lp1
+S'  Welcome  to   the  Vernon  Smith   Experimental  Economics '
+p2
+aF2.065
+aF2.072
+aa(lp3
+S'  Laboratory.  Please  carefully  watch  these  video '
+p4
+aF4.06
+aF6.132
+aa(lp5
+S' instructions  and  follow  along  on  the  paper  copy '
+p6
+aF3.048
+aF9.18
+aa(lp7
+S' at  your  desk.   Experiment  Overview  You  are  about '
+p8
+aF6.022
+aF15.202
+aa(lp9
+S' to  participate  in  an   experiment  in  the  economics '
+p10
+aF2.421000000000001
+aF17.623
+aa(lp11
+S' of  decision-making.  If  you  listen  carefully, '
+p12
+aF3.6080000000000005
+aF21.231
+aa(lp13
+S'  you  could  earn  a  large  amount  of  money,  that '
+p14
+aF2.7479999999999976
+aF23.979
+aa(lp15
+S' will  be  paid  to  you  in  cash,  in  private,  at '
+p16
+aF2.9720000000000013
+aF26.951
+aa(lp17
+S' the  end  of  the  experiment.  It  is  important '
+p18
+aF3.0459999999999994
+aF29.997
+aa(lp19
+S'  that  you  remain  silent  and  do  not  look  at '
+p20
+aF2.3659999999999997
+aF32.363
+aa(lp21
+S" other  people\\'s  work.  If  you  have  any  questions, "
+p22
+aF3.256999999999998
+aF35.62
+aa(lp23
+S' or  need  any  assistance  of  any  kind,   please '
+p24
+aF2.7590000000000003
+aF38.379
+aa(lp25
+S' raise  your  hand  and  an  experimenter  will  help '
+p26
+aF2.3569999999999993
+aF40.736
+aa(lp27
+S' you  out.   During  the  experiment,   do  not  talk, '
+p28
+aF3.852000000000004
+aF44.588
+aa(lp29
+S' laugh  or  exclaim  out  loud  and  be  sure  to   keep '
+p30
+aF2.711999999999996
+aF47.3
+aa(lp31
+S' your  eyes  on  your  screen  only.  In  addition, '
+p32
+aF3.2080000000000055
+aF50.508
+aa(lp33
+S'  please  turn  off  your  cell  phones,  etc.  and '
+p34
+aF4.555999999999997
+aF55.064
+aa(lp35
+S' put  them  away  during  the  experiment.  Anybody '
+p36
+aF3.2010000000000005
+aF58.265
+aa(lp37
+S' that  violates  these  rules  will  be  asked  to '
+p38
+aF2.575000000000003
+aF60.84
+aa(lp39
+S' leave  and  will  not  be  paid.   We  expect,  and '
+p40
+aF3.317999999999998
+aF64.158
+aa(lp41
+S' appreciate  your  cooperation.   Agenda   1.  We  will '
+p42
+aF7.120999999999995
+aF71.279
+aa(lp43
+S' first  go  over  the  instructions.   2.  Then  we '
+p44
+aF5.38600000000001
+aF76.665
+aa(lp45
+S' will  have  a  practice  match  to  learn  the  interface. '
+p46
+aF2.11399999999999
+aF78.779
+aa(lp47
+S'  3.  Next,  there  will  be  a  quiz  with  10  questions '
+p48
+aF6.378
+aF85.157
+aa(lp49
+S' to  make  sure  everyone  understands  the  instructions. '
+p50
+aF2.6260000000000048
+aF87.783
+aa(lp51
+S'  All  10  questions  will  refer  to  these  instructions '
+p52
+aF4.715000000000003
+aF92.498
+aa(lp53
+S' so  you  should  follow  them  carefully.   If  you '
+p54
+aF3.894999999999996
+aF96.393
+aa(lp55
+S' answer  all  questions  correctly  you  will  earn '
+p56
+aF2.326999999999998
+aF98.72
+aa(lp57
+S' 10  dollars.   If  you  answer  at  least  one  question '
+p58
+aF4.430999999999997
+aF103.151
+aa(lp59
+S' incorrectly  you  will  earn  nothing,  at  which '
+p60
+aF2.5790000000000077
+aF105.73
+aa(lp61
+S' point  you  will  not  need  to  answer  any  more '
+p62
+aF2.272999999999996
+aF108.003
+aa(lp63
+S' questions.   You  will  have  10  minutes  to  answer '
+p64
+aF4.213999999999999
+aF112.217
+aa(lp65
+S' the  10  questions.   4.  After  the  quiz,  you  will '
+p66
+aF6.024000000000001
+aF118.241
+aa(lp67
+S' have  10  minutes  to  prepare  for  the  experiment. '
+p68
+aF1.8029999999999973
+aF120.044
+aa(lp69
+S'  In  the  experiment  you  will  be  working  with '
+p70
+aF4.126000000000005
+aF124.17
+aa(lp71
+S' a  fictitious  currency  called  Francs.  You  will '
+p72
+aF3.3939999999999912
+aF127.564
+aa(lp73
+S' be  paid  in  US  Dollars  at  the  end  of  the  experiment. '
+p74
+aF2.3149999999999977
+aF129.879
+aa(lp75
+S'  The  exchange  rate  today  is:  1250  Francs  equals '
+p76
+aF6.429000000000002
+aF136.308
+aa(lp77
+S' 1  USD.   Experiment  Details   This  experiment  consists '
+p78
+aF10.359000000000009
+aF146.667
+aa(lp79
+S' of  ten  matches.   Prior  to  start  of  the  experiment, '
+p80
+aF3.774000000000001
+aF150.441
+aa(lp81
+S' all  participants  may  be  split  into  two  groups. '
+p82
+aF3.5039999999999907
+aF153.945
+aa(lp83
+S' The  groups  will  stay  fixed  and  you  will  know '
+p84
+aF2.944000000000017
+aF156.889
+aa(lp85
+S' the  number  of  participants  in  your  group  throughout '
+p86
+aF2.2879999999999825
+aF159.177
+aa(lp87
+S' the  experiment.   At  the  beginning  of  each  match, '
+p88
+aF3.9749999999999943
+aF163.152
+aa(lp89
+S' you  will  be  paired  randomly  with  one  other '
+p90
+aF2.1110000000000184
+aF165.263
+aa(lp91
+S' participant  from  your  group.  You  will  remain '
+p92
+aF3.400999999999982
+aF168.664
+aa(lp93
+S' matched  with  this  same  participant  until  the '
+p94
+aF2.2890000000000157
+aF170.953
+aa(lp95
+S' end  of  the  match,  but  then  will  be  paired '
+p96
+aF1.8810000000000002
+aF172.834
+aa(lp97
+S' with  another  randomly  selected  participant  from '
+p98
+aF2.688999999999993
+aF175.523
+aa(lp99
+S' your  group  in  the  following  match.  Each  match '
+p100
+aF3.0579999999999927
+aF178.581
+aa(lp101
+S' will  have  the  same  structure,   but  may  contain '
+p102
+aF2.335000000000008
+aF180.916
+aa(lp103
+S' different  numbers  of  periods.   You  will  remain '
+p104
+aF3.6680000000000064
+aF184.584
+aa(lp105
+S' anonymous  throughout  the  experiment.  You  will '
+p106
+aF3.5180000000000007
+aF188.102
+aa(lp107
+S' not  know  the  identity  of  the  participant  that '
+p108
+aF2.453000000000003
+aF190.555
+aa(lp109
+S' you  are  paired  with,  and  they  will  not  know '
+p110
+aF1.733000000000004
+aF192.288
+aa(lp111
+S' your  identity.   The  choices  made  by  you,  and '
+p112
+aF3.8009999999999877
+aF196.089
+aa(lp113
+S' the  participant  you  are  paired  with,  have  no '
+p114
+aF2.419000000000011
+aF198.508
+aa(lp115
+S' effect  on  the  payoffs  of  participants  in  other '
+p116
+aF2.7879999999999825
+aF201.296
+aa(lp117
+S' pairs,  and  vice  versa.  Therefore,  your  payoff '
+p118
+aF4.064999999999998
+aF205.361
+aa(lp119
+S' in  a  given  match  is  based  solely  on  the  choices '
+p120
+aF2.480000000000018
+aF207.841
+aa(lp121
+S' made  by  you  and  the  participant  that  you  are '
+p122
+aF2.4809999999999945
+aF210.322
+aa(lp123
+S" paired  with.   Next,  Let\\'s  Look  at  the  experimental "
+p124
+aF3.2889999999999873
+aF213.611
+aa(lp125
+S' Interface  Specific  Instructions  for  Each  Period '
+p126
+aF5.854000000000013
+aF219.465
+aa(lp127
+S' Your  payoff  in  each  period  will  depend  on  your '
+p128
+aF3.6740000000000066
+aF223.139
+aa(lp129
+S' choice  and  the  choice  of  the  participant  that '
+p130
+aF2.1610000000000014
+aF225.3
+aa(lp131
+S' you  are  paired  with.  You  will  choose  one  of '
+p132
+aF3.1019999999999754
+aF228.402
+aa(lp133
+S' two  options,  either  W  or  Y.  You  will  be  able '
+p134
+aF4.146000000000015
+aF232.548
+aa(lp135
+S' to  see  the  payoffs  for  each  combination  of '
+p136
+aF2.3969999999999914
+aF234.945
+aa(lp137
+S' choices  for  you  and  the  participant  that  you '
+p138
+aF2.2120000000000175
+aF237.157
+aa(lp139
+S' are  paired  with.  These  payoffs  will  remain  the '
+p140
+aF3.056999999999988
+aF240.214
+aa(lp141
+S' same  throughout  the  entire  experiment  (all  matches). '
+p142
+aF3.242999999999995
+aF243.457
+aa(lp143
+S'  The  payoffs  will  be  displayed  in  a  table  like '
+p144
+aF4.3559999999999945
+aF247.813
+aa(lp145
+S' this:  In  this  example  above,  the  rows  are  the '
+p146
+aF3.1980000000000075
+aF251.011
+aa(lp147
+S' following:   Row  #1  - Your  choice  (either  W  or '
+p148
+aF5.611999999999995
+aF256.623
+aa(lp149
+S" Y  in  this  example)   Row  #2  - Other\\'s  choice "
+p150
+aF4.334000000000003
+aF260.957
+aa(lp151
+S' (either  W  or  Y  in  this  example)   Row  #3  - Your '
+p152
+aF6.867999999999995
+aF267.825
+aa(lp153
+S" payoff.   Row  #4  - Other\\'s  payoff.   Row  #5  - Total "
+p154
+aF6.9290000000000305
+aF274.754
+aa(lp155
+S' number  of  times  that  that  combination  has  been '
+p156
+aF3.0670000000000073
+aF277.821
+aa(lp157
+S' played  this  match.  Examples:  In  the  table  above, '
+p158
+aF4.409999999999968
+aF282.231
+aa(lp159
+S'  if  you  choose  W  and   the  participant  that '
+p160
+aF3.033999999999992
+aF285.265
+aa(lp161
+S' you  are  paired  with  chooses  Y,  then   you  receive '
+p162
+aF2.268000000000029
+aF287.533
+aa(lp163
+S' a  payoff  of  3,  and   the  participant  that  you '
+p164
+aF3.1709999999999923
+aF290.704
+aa(lp165
+S' are  paired  with  receives  a  payoff  of  4.   This '
+p166
+aF3.3859999999999673
+aF294.09
+aa(lp167
+S' combination  has  occurred  19  times  so  far  this '
+p168
+aF3.3740000000000236
+aF297.464
+aa(lp169
+S' match.   If  you  choose  W  and   the  participant '
+p170
+aF3.2309999999999945
+aF300.695
+aa(lp171
+S' that  you  are  paired  with  chooses  W,  then   you '
+p172
+aF3.059000000000026
+aF303.754
+aa(lp173
+S' receive  a  payoff  of  7,  and   the  participant '
+p174
+aF2.464999999999975
+aF306.219
+aa(lp175
+S' that  you  are  paired  with  receives  a  payoff '
+p176
+aF2.26400000000001
+aF308.483
+aa(lp177
+S' of  8.   This  combination  has  occurred  6  times '
+p178
+aF4.055999999999983
+aF312.539
+aa(lp179
+S' so  far  this  match.   If  you  choose  Y  and   the '
+p180
+aF3.4569999999999936
+aF315.996
+aa(lp181
+S' participant  you  are  paired  with  chooses  Y,  then '
+p182
+aF2.830000000000041
+aF318.826
+aa(lp183
+S'  you  receive  a  payoff  of  1,  and   the  participant '
+p184
+aF2.651999999999987
+aF321.478
+aa(lp185
+S' that  you  are  paired  with  receives  a  payoff '
+p186
+aF2.3559999999999945
+aF323.834
+aa(lp187
+S' of  2.   This  combination  has  occurred  6  times '
+p188
+aF4.081999999999994
+aF327.916
+aa(lp189
+S' so  far  this  match.   History  As  the  match  progresses, '
+p190
+aF4.910000000000025
+aF332.826
+aa(lp191
+S' you  will  see  the  history  of  play  across  the '
+p192
+aF3.134999999999991
+aF335.961
+aa(lp193
+S' top  of  the  screen,  displayed  like  this:   This '
+p194
+aF2.9869999999999663
+aF338.948
+aa(lp195
+S' history  displays   the  period  (labeled  Period), '
+p196
+aF3.0810000000000173
+aF342.029
+aa(lp197
+S'  your  choice  in  that  period  (labeled  My  Choice), '
+p198
+aF4.247000000000014
+aF346.276
+aa(lp199
+S'  the  choice  of  the  participant  you  are  paired '
+p200
+aF2.836999999999989
+aF349.113
+aa(lp201
+S" with  in  that  period  (labeled  Other\\'s  Choice), "
+p202
+aF3.093999999999994
+aF352.207
+aa(lp203
+S' and   the  payoff  for  that  period  (labeled  My '
+p204
+aF3.757000000000005
+aF355.964
+aa(lp205
+S' Payoff).  For  example,  in  the  above  history, '
+p206
+aF4.22199999999998
+aF360.186
+aa(lp207
+S'  in  period  39,   you  played  W,   the  participant '
+p208
+aF4.076000000000022
+aF364.262
+aa(lp209
+S' you  are  paired  with  played  Y,   and  you  received '
+p210
+aF2.8029999999999973
+aF367.065
+aa(lp211
+S' a  payoff  of  3.   Rules  Rather  than  directly '
+p212
+aF5.1089999999999804
+aF372.174
+aa(lp213
+S' making  choices  of  W  or  Y,  you  will  develop '
+p214
+aF3.1720000000000255
+aF375.346
+aa(lp215
+S' a  set  of  rules  which  will  automatically  make '
+p216
+aF2.576000000000022
+aF377.922
+aa(lp217
+S' choices  for  you.   The  set  of  rules  will  appear '
+p218
+aF3.05499999999995
+aF380.977
+aa(lp219
+S' in  the  middle  of  the  screen.   You  will  be '
+p220
+aF3.261000000000024
+aF384.238
+aa(lp221
+S' able  to  construct  rules  using  the  rule  constructor '
+p222
+aF2.180999999999983
+aF386.419
+aa(lp223
+S' at  the  bottom  of  the  screen.   A  rule  consists '
+p224
+aF3.6469999999999914
+aF390.066
+aa(lp225
+S' of  two  parts:   Input  Sequence  - A  sequence  of '
+p226
+aF3.920000000000016
+aF393.986
+aa(lp227
+S' choices  made  by  you  and  the  participant  you '
+p228
+aF2.4700000000000273
+aF396.456
+aa(lp229
+S' are  paired  with.   Output  - A  choice  to  be  made '
+p230
+aF3.6549999999999727
+aF400.111
+aa(lp231
+S' by  you  after  the  input  sequence  occurs.   Some '
+p232
+aF3.7959999999999923
+aF403.907
+aa(lp233
+S' example  rules  are  displayed  below:   For  example, '
+p234
+aF3.290999999999997
+aF407.198
+aa(lp235
+S' Rule  #2  has  an  input  sequence  of   (Y,Y),   (W,W), '
+p236
+aF6.4290000000000305
+aF413.627
+aa(lp237
+S'  (Y,W)  and  an  output  of   W.  This  means  that '
+p238
+aF7.4950000000000045
+aF421.122
+aa(lp239
+S' if  you  have  played   Y,  W,  and  then  Y  in  the '
+p240
+aF3.209000000000003
+aF424.331
+aa(lp241
+S' last  three  periods,  and  the  participant  that '
+p242
+aF2.5819999999999936
+aF426.913
+aa(lp243
+S' you  are  paired  with  has  played   Y,  W,  and '
+p244
+aF2.6100000000000136
+aF429.523
+aa(lp245
+S' then  W,  this  rule  will  lead  you  to  play   W '
+p246
+aF2.5499999999999545
+aF432.073
+aa(lp247
+S' in  the  next  period.  As  play  progresses  you '
+p248
+aF3.955000000000041
+aF436.028
+aa(lp249
+S' will  develop  a  set  of  rules  that  will  be  used '
+p250
+aF2.488999999999976
+aF438.517
+aa(lp251
+S' to  make  your  choices.  Play  will  proceed  as '
+p252
+aF3.4259999999999877
+aF441.943
+aa(lp253
+S' follows:  Each  period,   your  set  of  rules  will '
+p254
+aF3.140000000000043
+aF445.083
+aa(lp255
+S' select  the  choice  to  be  made  next  period.  The '
+p256
+aF3.7579999999999814
+aF448.841
+aa(lp257
+S'  rule  that  will  be  used  to  make  the  choice '
+p258
+aF1.7559999999999718
+aF450.597
+aa(lp259
+S' will  be  highlighted.  The  corresponding   sequence '
+p260
+aF3.2690000000000055
+aF453.866
+aa(lp261
+S' in  the  history  will  be  highlighted.  A   preview '
+p262
+aF3.573000000000036
+aF457.439
+aa(lp263
+S' of  the  choice  to  be  made  next  period  will '
+p264
+aF2.4079999999999586
+aF459.847
+aa(lp265
+S' be  shown  as  a  lightly  colored  cell  on  the '
+p266
+aF2.2069999999999936
+aF462.054
+aa(lp267
+S' history  of  play.  In  order  to  move  to  the  next '
+p268
+aF3.663000000000011
+aF465.717
+aa(lp269
+S' period,  you  have  to  confirm  the  choice  by  clicking '
+p270
+aF2.6030000000000086
+aF468.32
+aa(lp271
+S' on  the  corresponding  history  cell.   Once  you '
+p272
+aF4.009999999999991
+aF472.33
+aa(lp273
+S' have  confirmed  your  choice,  the  light  color '
+p274
+aF2.18100000000004
+aF474.511
+aa(lp275
+S' will  turn  to  a  regular  color,  and  you  may '
+p276
+aF2.676999999999964
+aF477.188
+aa(lp277
+S' need  to  wait  for  the  participant  that  you  are '
+p278
+aF2.4180000000000064
+aF479.606
+aa(lp279
+S' paired  with  to  make  their  choice.   There  are '
+p280
+aF7.786999999999978
+aF487.393
+aa(lp281
+S' several  ways  that  you  can  modify  your  rules '
+p282
+aF2.059000000000026
+aF489.452
+aa(lp283
+S' during  the  experiment.  1.   First,  you  can  use '
+p284
+aF5.999000000000024
+aF495.451
+aa(lp285
+S' the  rule  constructor  in  the  bottom  center  of '
+p286
+aF2.3979999999999677
+aF497.849
+aa(lp287
+S' the  screen.   Press  the  plus  button  to  add  more '
+p288
+aF3.4739999999999895
+aF501.323
+aa(lp289
+S' columns,   or  one  of  the  minus  buttons  to  subtract '
+p290
+aF2.775000000000034
+aF504.098
+aa(lp291
+S' columns.  Click  on  the  question  marks  to  fill '
+p292
+aF3.6299999999999955
+aF507.728
+aa(lp293
+S' in  the  boxes.  When  you  click  on  a  question '
+p294
+aF3.495999999999981
+aF511.224
+aa(lp295
+S' mark,   either  a  W  or  a  Y  will  appear.  If '
+p296
+aF4.069999999999993
+aF515.294
+aa(lp297
+S' you  click  on  a  W,   it  will  switch  to  a  Y, '
+p298
+aF3.0109999999999673
+aF518.305
+aa(lp299
+S' and  if  you  click  on  a  Y,   it  will  switch '
+p300
+aF2.525000000000091
+aF520.83
+aa(lp301
+S' to  a  W.   Once  you  have  completely  filled  in '
+p302
+aF3.766999999999939
+aF524.597
+aa(lp303
+S' the  rule  (leaving  no  question  marks),   the  add '
+p304
+aF3.8740000000000236
+aF528.471
+aa(lp305
+S' rule  button  will  appear,   and  the  rule  can '
+p306
+aF2.258000000000038
+aF530.729
+aa(lp307
+S' be  added  to  your  set.  2.  Second,  if  you  look '
+p308
+aF5.737999999999943
+aF536.467
+aa(lp309
+S' at  a  rule  in  the  set,   you  will  notice  a '
+p310
+aF2.22199999999998
+aF538.689
+aa(lp311
+S' green  copy  button,   and  a  red  delete  button. '
+p312
+aF2.23700000000008
+aF540.926
+aa(lp313
+S' If  you   press  the  green  copy  button,  it  will '
+p314
+aF3.850999999999999
+aF544.777
+aa(lp315
+S' copy  the  rule  down  to  the  constructor,   and '
+p316
+aF2.3729999999999336
+aF547.15
+aa(lp317
+S' you  will  be  able  to  create  a  similar  rule. '
+p318
+aF2.2029999999999745
+aF549.353
+aa(lp319
+S' If  you   press  the  red  delete  button,  it  will '
+p320
+aF5.504000000000019
+aF554.857
+aa(lp321
+S' delete  the  rule  from  the   set.  3.  Since  your '
+p322
+aF7.340000000000032
+aF562.197
+aa(lp323
+S' rule  set  needs  to  make  a  single  choice  each '
+p324
+aF2.0960000000000036
+aF564.293
+aa(lp325
+S' period,  it  is  not  possible  to  have  two  rules '
+p326
+aF3.0499999999999545
+aF567.343
+aa(lp327
+S' with  the  same  input  sequence,  but  with  different '
+p328
+aF2.400000000000091
+aF569.743
+aa(lp329
+S' outputs.   If  you  create  a  rule  that  has  the '
+p330
+aF3.6649999999999636
+aF573.408
+aa(lp331
+S' same  input  sequence  but  a  different  output, '
+p332
+aF2.091000000000008
+aF575.499
+aa(lp333
+S" you  will  get  an  error  that   says  \\'Conflicting "
+p334
+aF2.231999999999971
+aF577.731
+aa(lp335
+S' rule  in  set",  and  a   button  that  says  \\\'Switch '
+p336
+aF2.6230000000000473
+aF580.354
+aa(lp337
+S' Rule"  will  appear.  If  you  press  this  button, '
+p338
+aF3.062000000000012
+aF583.416
+aa(lp339
+S' it  will  delete  the   conflicting  rule  from  the '
+p340
+aF2.8069999999999027
+aF586.223
+aa(lp341
+S' rule  set,   and  add  the  rule  from  the   constructor. '
+p342
+aF2.0730000000000928
+aF588.296
+aa(lp343
+S' The  length  of  the  rule  is  measured  by  the '
+p344
+aF5.666999999999916
+aF593.963
+aa(lp345
+S' length  of  the  input  sequence.  So   rule  #2, '
+p346
+aF3.375
+aF597.338
+aa(lp347
+S' and   rule  #3  have  a  length  of  3,  and   rule '
+p348
+aF3.6280000000000427
+aF600.966
+aa(lp349
+S' #4  has  a  length  of  2.  A  rule  of  length  n '
+p350
+aF3.8780000000000427
+aF604.844
+aa(lp351
+S' is  said  to  fit  the  history  if  the  input  sequence '
+p352
+aF2.461999999999989
+aF607.306
+aa(lp353
+S' matches  the  last  n  periods  of  the  history. '
+p354
+aF2.274000000000001
+aF609.58
+aa(lp355
+S' For  example,  since  the  last  three  periods  of '
+p356
+aF4.2590000000000146
+aF613.839
+aa(lp357
+S' play  in  the  above  history   (periods  42  through '
+p358
+aF3.7509999999999764
+aF617.59
+aa(lp359
+S' 44)  have  been   (Y,  Y),   (W,  W),  and   (Y,  W), '
+p360
+aF9.274000000000001
+aF626.864
+aa(lp361
+S' and  that  sequence  is  also  the  input  for   rule '
+p362
+aF3.38900000000001
+aF630.253
+aa(lp363
+S' #2,  then  rule  #2  is  said  to  fit  the  history. '
+p364
+aF3.9039999999999964
+aF634.157
+aa(lp365
+S' Similarly,  given  the  above  history,  we  can  see '
+p366
+aF4.826999999999998
+aF638.984
+aa(lp367
+S' that   rule  #4  fits  the  history,  but   rule  #3 '
+p368
+aF3.967999999999961
+aF642.952
+aa(lp369
+S' does  not  fit  the  history.  If  more  than  one '
+p370
+aF3.905999999999949
+aF646.858
+aa(lp371
+S' rule  fits  the  history,  then  the  rule  with  the '
+p372
+aF2.5870000000001028
+aF649.445
+aa(lp373
+S' longer  length  will  determine  the  choice.  For '
+p374
+aF3.409999999999968
+aF652.855
+aa(lp375
+S' example,  given  the  above  history  since  both '
+p376
+aF2.9569999999999936
+aF655.812
+aa(lp377
+S'  rule  #2,  and   rule  #4  fit  the  history,   rule '
+p378
+aF3.356999999999971
+aF659.169
+aa(lp379
+S' #2  will  be  used  to  make  your  choice,  since '
+p380
+aF2.5550000000000637
+aF661.724
+aa(lp381
+S' it  is  longer.  Therefore,  given  the  history, '
+p382
+aF3.8029999999999973
+aF665.527
+aa(lp383
+S' and  the  rule  set,  your  choice  next  period  will '
+p384
+aF3.149000000000001
+aF668.676
+aa(lp385
+S'  be  W,  as  prescribed  by   rule  #2.   If  no  rules '
+p386
+aF6.779999999999973
+aF675.456
+aa(lp387
+S' fit  the  history,  then  your   Default  Rule  will '
+p388
+aF2.677000000000021
+aF678.133
+aa(lp389
+S' be  selected.  The  default  rule  will  only  be '
+p390
+aF3.8579999999999472
+aF681.991
+aa(lp391
+S' used  when  no  rules  fit  the  history.   To  select '
+p392
+aF3.5750000000000455
+aF685.566
+aa(lp393
+S' your  default  rule  select  either   W,  or   Y, '
+p394
+aF3.0839999999999463
+aF688.65
+aa(lp395
+S' in  the  bottom  left  of  your  screen.  Additionally, '
+p396
+aF3.4200000000000728
+aF692.07
+aa(lp397
+S' you  have  to  select  the   First  Period  rule. '
+p398
+aF2.953999999999951
+aF695.024
+aa(lp399
+S' The  first  period  rule  will  only  be  used  in '
+p400
+aF3.544999999999959
+aF698.569
+aa(lp401
+S' the  first  period  of  the  match.  To  select  your '
+p402
+aF3.5570000000000164
+aF702.126
+aa(lp403
+S' first  period  rule  select  either   W,  or   Y, '
+p404
+aF2.94500000000005
+aF705.071
+aa(lp405
+S' in  the  bottom  left  of  your  screen.   Additional '
+p406
+aF4.106999999999971
+aF709.178
+aa(lp407
+S' Examples  In  the  example  above,   Rule  #4,  and '
+p408
+aF4.951000000000022
+aF714.129
+aa(lp409
+S'  Rule  #9,  both  fit  the  history.  However,  rule '
+p410
+aF4.7579999999999245
+aF718.887
+aa(lp411
+S' #9  will  be  selected  because  it  is  longer.  Therefore, '
+p412
+aF4.148000000000025
+aF723.035
+aa(lp413
+S'  W  will  be  played  in  the  next  period,   as '
+p414
+aF3.1240000000000236
+aF726.159
+aa(lp415
+S' prescribed  by  rule  #9.  For  the  example  above, '
+p416
+aF4.115000000000009
+aF730.274
+aa(lp417
+S' how  can  we  change  the  rule  set  to  ensure  that '
+p418
+aF2.7670000000000528
+aF733.041
+aa(lp419
+S' Y  is  played  next  period.  There  are  several '
+p420
+aF3.350999999999999
+aF736.392
+aa(lp421
+S' ways  to  make  changes  to  the  rule  set  in  order '
+p422
+aF2.5529999999999973
+aF738.945
+aa(lp423
+S' for  Y  to  be  played.  First,  you  can  delete '
+p424
+aF3.84699999999998
+aF742.792
+aa(lp425
+S'  Rule  #9,  which  would  cause   Rule  #4  to  be '
+p426
+aF3.259999999999991
+aF746.052
+aa(lp427
+S' the  longest  rule  that  fits  the  history,   and '
+p428
+aF2.58299999999997
+aF748.635
+aa(lp429
+S' therefore  would  lead  to  Y  being  played  next '
+p430
+aF2.032000000000039
+aF750.667
+aa(lp431
+S' period.   Second,  you   can  add  a  longer  rule '
+p432
+aF8.889999999999986
+aF759.557
+aa(lp433
+S' that  fits  the  history  that  has  Y  as  the  output. '
+p434
+aF2.2329999999999472
+aF761.79
+aa(lp435
+S' Since  you  added  a  longer  rule  that  fits  the '
+p436
+aF3.574000000000069
+aF765.364
+aa(lp437
+S' history,  that  rule  will  be  used  to  make  the '
+p438
+aF2.620999999999981
+aF767.985
+aa(lp439
+S' choice,  and  will  select  Y  as  the  choice  for '
+p440
+aF2.312000000000012
+aF770.297
+aa(lp441
+S' next  period.   Number  of  Periods  Per  Match  The '
+p442
+aF10.052999999999997
+aF780.35
+aa(lp443
+S' number  of  periods  in  each  match  will  be  determined '
+p444
+aF2.134999999999991
+aF782.485
+aa(lp445
+S' randomly  using  the  following  procedure.  At  the '
+p446
+aF4.039999999999964
+aF786.525
+aa(lp447
+S' end  of  each  period,   a  number  will  be  chosen '
+p448
+aF2.4440000000000737
+aF788.969
+aa(lp449
+S' randomly  from  the  set  of  numbers   {1,2,3,  up '
+p450
+aF4.6469999999999345
+aF793.616
+aa(lp451
+S' to,48,49,50},  where  each  number  is  equally  likely. '
+p452
+aF5.538000000000011
+aF799.154
+aa(lp453
+S'  If  the  number  is  1,  then  the  match  will  end. '
+p454
+aF4.0890000000000555
+aF803.243
+aa(lp455
+S'  If  the  number  is  not  1,  then  the  match  will '
+p456
+aF3.8299999999999272
+aF807.073
+aa(lp457
+S' continue.  The  number  will  always  be  placed  back '
+p458
+aF3.634999999999991
+aF810.708
+aa(lp459
+S' into  the  set  after  it  is  drawn.  Thus,  in  any '
+p460
+aF3.965000000000032
+aF814.673
+aa(lp461
+S' period  there  is  a  2  percent  CHANCE  that  the '
+p462
+aF2.5639999999999645
+aF817.237
+aa(lp463
+S' match  will  end,  and  a  98  percent  CHANCE  that '
+p464
+aF2.4039999999999964
+aF819.641
+aa(lp465
+S' the  match  will  have  another  period.  Therefore, '
+p466
+aF3.187999999999988
+aF822.829
+aa(lp467
+S'  the  expected  number  of  periods  in  each  match '
+p468
+aF3.2280000000000655
+aF826.057
+aa(lp469
+S' will  be  50.   This  procedure  has  been  performed '
+p470
+aF3.2649999999999864
+aF829.322
+aa(lp471
+S' on  the  computer  before  the  experiment.  Therefore, '
+p472
+aF3.8110000000000355
+aF833.133
+aa(lp473
+S' you  will  not  see  the  number  selected  from  {1,2,3, '
+p474
+aF2.8929999999999154
+aF836.026
+aa(lp475
+S' up  to,48,49,50}.  To  ensure  that  the  length  of '
+p476
+aF8.512000000000057
+aF844.538
+aa(lp477
+S' the  match  is  not  dependent  on  your  play,  the '
+p478
+aF2.367999999999938
+aF846.906
+aa(lp479
+S' number  of  periods  for  each  match  has  be  written '
+p480
+aF2.0710000000000264
+aF848.977
+aa(lp481
+S' on  the  board  before  the  experiment,  and  will '
+p482
+aF2.423000000000002
+aF851.4
+aa(lp483
+S' be  uncovered  at  the  end  of  the  experiment. '
+p484
+aF1.5950000000000273
+aF852.995
+aa(lp485
+S'  Your  choices  will  be  determined   automatically '
+p486
+aF3.314999999999941
+aF856.31
+aa(lp487
+S' from  your  rule  set.  However,  you  will  need '
+p488
+aF4.114000000000033
+aF860.424
+aa(lp489
+S' to  confirm  the   choice  within  an  allotted  amount '
+p490
+aF2.4260000000000446
+aF862.85
+aa(lp491
+S' of  time.  To  confirm  your  choice,   click  on '
+p492
+aF3.8969999999999345
+aF866.747
+aa(lp493
+S' your  action  for  the  next  period  within  the '
+p494
+aF2.2140000000000555
+aF868.961
+aa(lp495
+S" history  at  the  top  of  the  screen.  If  you  don\\'t "
+p496
+aF3.4529999999999745
+aF872.414
+aa(lp497
+S' confirm  the  choice  within  the  allotted  amount '
+p498
+aF2.3630000000000564
+aF874.777
+aa(lp499
+S' of  time,   then  the  choice  will  be  confirmed '
+p500
+aF1.947999999999979
+aF876.725
+aa(lp501
+S' automatically  at  the  end  of  the  allotted  time. '
+p502
+aF2.754000000000019
+aF879.479
+aa(lp503
+S' The  experiment  will  not  be  able  to  proceed '
+p504
+aF3.519999999999982
+aF882.999
+aa(lp505
+S' until  everyone  confirms  their  choices.   Everyone '
+p506
+aF3.5579999999999927
+aF886.557
+aa(lp507
+S' in  your  group  will  have  the  same  amount  of '
+p508
+aF2.2129999999999654
+aF888.77
+aa(lp509
+S' time  allotted  in  each  period.   Additional  Information '
+p510
+aF4.236999999999966
+aF893.007
+aa(lp511
+S' about  Matches  During  matches  1  through  10  you '
+p512
+aF3.59800000000007
+aF896.605
+aa(lp513
+S' will  be  able  to  construct  the  set  of  rules '
+p514
+aF2.3339999999999463
+aF898.939
+aa(lp515
+S' to  make  your  choices.   All  of  the  rules  in '
+p516
+aF3.2169999999999845
+aF902.156
+aa(lp517
+S' your  set  at  the  end  of  one  match  will  remain '
+p518
+aF1.8810000000000855
+aF904.037
+aa(lp519
+S' in  your  set  at  the  start  of  the  next  match. '
+p520
+aF2.0679999999999836
+aF906.105
+aa(lp521
+S'  Before  the  first  match,   you  will  have  1  minute '
+p522
+aF3.6059999999999945
+aF909.711
+aa(lp523
+S' to  look  over  the  payoffs,   and  an  additional '
+p524
+aF2.104000000000042
+aF911.815
+aa(lp525
+S' 10  minute  to  construct  your  rules.   Editing '
+p526
+aF3.9659999999998945
+aF915.781
+aa(lp527
+S' your  set  of  rules  In  the  experiment  today  you '
+p528
+aF3.6270000000000664
+aF919.408
+aa(lp529
+S' will  need  to  pay  a  cost  to  edit  rules  during '
+p530
+aF2.01400000000001
+aF921.422
+aa(lp531
+S' the  match.  More  specifically,  Before  each  match '
+p532
+aF4.333999999999946
+aF925.756
+aa(lp533
+S' starts,  you  can  make  changes  to  your  set  of '
+p534
+aF2.5090000000000146
+aF928.265
+aa(lp535
+S' rules  at  no  cost.  After  each  match  starts, '
+p536
+aF3.491999999999962
+aF931.757
+aa(lp537
+S' if  you  want  to  make  changes  to  your  set  of '
+p538
+aF2.6680000000000064
+aF934.425
+aa(lp539
+S' rules,   you  must  click  the  \\\'Unlock  Rules"  button. '
+p540
+aF2.3050000000000637
+aF936.73
+aa(lp541
+S' The  cost  for  clicking  the  \\\'Unlock  Rules"  button '
+p542
+aF3.6219999999999573
+aF940.352
+aa(lp543
+S' is  250  Francs.  The  total  cost  incurred  in  all '
+p544
+aF4.822000000000003
+aF945.174
+aa(lp545
+S' matches   will  be  displayed  at  the  top  of  the '
+p546
+aF2.3010000000000446
+aF947.475
+aa(lp547
+S' screen  in  red.  You  will  be  able  to  edit  your '
+p548
+aF3.322999999999979
+aF950.798
+aa(lp549
+S' rules  for  the  duration  of  one  period.  Once '
+p550
+aF3.163000000000011
+aF953.961
+aa(lp551
+S' you  are  done  editing  your  rules  you  may  click '
+p552
+aF2.375
+aF956.336
+aa(lp553
+S' the  \\\'Lock  Rules"   button.  If  you  don\\\'t  want '
+p554
+aF3.1399999999999864
+aF959.476
+aa(lp555
+S' to  make  changes  to  your  set  of  rules,  you '
+p556
+aF2.42999999999995
+aF961.906
+aa(lp557
+S' may  choose  not  to  click  the  \\\'Unlock  Rule"  button. '
+p558
+aF2.090000000000032
+aF963.996
+aa(lp559
+S' Then  you  will  not  incur  the  cost  of  250  Francs. '
+p560
+aF4.5779999999999745
+aF968.574
+aa(lp561
+S' In  either  case,  you  will  need  to  confirm  the '
+p562
+aF3.677000000000021
+aF972.251
+aa(lp563
+S' choice  made  within  the  time  limit  set  for  each '
+p564
+aF2.2340000000000373
+aF974.485
+aa(lp565
+S' period.  If  the  time  limit  within  a  period  is '
+p566
+aF4.143000000000029
+aF978.628
+aa(lp567
+S' reached,  your  rules  will  become  locked,  your '
+p568
+aF2.4429999999999836
+aF981.071
+aa(lp569
+S' choice  will  be  confirmed  automatically,  and  you '
+p570
+aF2.6299999999999955
+aF983.701
+aa(lp571
+S' will  proceed  to  the  next  period.   Starting  Rules '
+p572
+aF4.322999999999979
+aF988.024
+aa(lp573
+S' Prior  to  the  start  of  the  experiment  you  will '
+p574
+aF3.47199999999998
+aF991.496
+aa(lp575
+S' have  10  minutes  to  construct  your  starting  set '
+p576
+aF2.2029999999999745
+aF993.699
+aa(lp577
+S' of  rules.  During  that  time,  you  will  be  presented '
+p578
+aF3.671000000000049
+aF997.37
+aa(lp579
+S' with  a  split-screen  view  of  of  the  construction '
+p580
+aF2.2630000000000337
+aF999.633
+aa(lp581
+S' screen.  In  this  view,  you  will  have  an  opportunity '
+p582
+aF3.772999999999911
+aF1003.406
+aa(lp583
+S' to  test  what  your  rule  set  will  select  as '
+p584
+aF2.4780000000000655
+aF1005.884
+aa(lp585
+S' an  output  for  a  variety  of  hypothetical  histories. '
+p586
+aF2.8310000000000173
+aF1008.715
+aa(lp587
+S' The  split-screen  will  consist  of  two  sides. '
+p588
+aF3.909999999999968
+aF1012.625
+aa(lp589
+S'  The  right  side  is  the  Starting  Rules  side. '
+p590
+aF3.505999999999972
+aF1016.131
+aa(lp591
+S' Rules  added  to  this  side  will  be  added  to '
+p592
+aF3.5779999999999745
+aF1019.709
+aa(lp593
+S' your  rule  set  at  the  start  of  the  first  match. '
+p594
+aF2.1440000000000055
+aF1021.853
+aa(lp595
+S'  The  left  side  is  the  Hypothetical  Rules  side. '
+p596
+aF3.789000000000101
+aF1025.642
+aa(lp597
+S' Rules  added  to  this  side  can  be  used  to  test '
+p598
+aF3.4809999999999945
+aF1029.123
+aa(lp599
+S' to  see  what  choices  different  combinations  of '
+p600
+aF2.7390000000000327
+aF1031.862
+aa(lp601
+S' rules  will  lead  to.  You  will  be  able  to  move '
+p602
+aF3.4629999999999654
+aF1035.325
+aa(lp603
+S' rules  from  the  Hypothetical  Rules  side  to  the '
+p604
+aF2.480000000000018
+aF1037.805
+aa(lp605
+S' Starting  Rules  side   by  clicking  the  blue  move '
+p606
+aF2.0670000000000073
+aF1039.872
+aa(lp607
+S' button.  To  delete  rules  from  either  side,   you '
+p608
+aF4.098999999999933
+aF1043.971
+aa(lp609
+S' need  to  click  the  delete  button.  You  will  be '
+p610
+aF3.1289999999999054
+aF1047.1
+aa(lp611
+S' able  to  see  what  choice   your  hypothetical, '
+p612
+aF1.4190000000000964
+aF1048.519
+aa(lp613
+S' and   your  starting  rule  sets  select  as  a  choice '
+p614
+aF3.1210000000000946
+aF1051.64
+aa(lp615
+S' for  next  period,  for  each  of  the  hypothetical '
+p616
+aF2.224999999999909
+aF1053.865
+aa(lp617
+S' histories  that  you  construct.  Notice  that  you '
+p618
+aF4.154999999999973
+aF1058.02
+aa(lp619
+S' will  be  able  to  construct,  and  store,  multiple '
+p620
+aF2.6200000000001182
+aF1060.64
+aa(lp621
+S' histories   at  the  same  time.  You  can  view  one '
+p622
+aF4.0629999999998745
+aF1064.703
+aa(lp623
+S' of  the  other  hypothetical  histories  by  clicking '
+p624
+aF2.5399999999999636
+aF1067.243
+aa(lp625
+S' the   History  #  button  at  the  top  of  the  Hypothetical '
+p626
+aF2.72199999999998
+aF1069.965
+aa(lp627
+S' Rules  side.  You  can  add  a  new  hypothetical '
+p628
+aF3.3050000000000637
+aF1073.27
+aa(lp629
+S' history  by  clicking  the   New  button  at  the '
+p630
+aF2.839999999999918
+aF1076.11
+aa(lp631
+S' top  of  the  Hypothetical  Rules  side.  To  construct '
+p632
+aF3.3190000000001874
+aF1079.429
+aa(lp633
+S' a  hypothetical  history  you  will  need  to  click '
+p634
+aF2.867999999999938
+aF1082.297
+aa(lp635
+S' on  the   question  marks  in  that  history.  You '
+p636
+aF3.2899999999999636
+aF1085.587
+aa(lp637
+S" don\\'t  need  to  fill  out  the  entire  history  to "
+p638
+aF2.599999999999909
+aF1088.187
+aa(lp639
+S' see  what  choice  your  rule  set  will  make.  Therefore, '
+p640
+aF2.9880000000000564
+aF1091.175
+aa(lp641
+S' it  is  useful  to  start  filling  out  the  new '
+p642
+aF2.9580000000000837
+aF1094.133
+aa(lp643
+S' histories  from  the  most  recent  periods  on  the '
+p644
+aF2.6389999999998963
+aF1096.772
+aa(lp645
+S" right  side.  Let\\'s  look  at  an  example.   Five "
+p646
+aF4.461999999999989
+aF1101.234
+aa(lp647
+S' periods  of  hypothetical  History  #4  have  been '
+p648
+aF3.3350000000000364
+aF1104.569
+aa(lp649
+S' filled  in.   The  hypothetical  rule  set  will  play '
+p650
+aF3.57100000000014
+aF1108.14
+aa(lp651
+S' W  after  this  history  occurs.   The  starting  rule '
+p652
+aF4.22199999999998
+aF1112.362
+aa(lp653
+S' set  will  play  Y  after  this  history  occurs. '
+p654
+aF2.487999999999829
+aF1114.85
+aa(lp655
+S"  Let\\'s  look  at  another  example.   14  periods "
+p656
+aF9.957000000000107
+aF1124.807
+aa(lp657
+S' of  hypothetical  History  #3  have  been  filled '
+p658
+aF3.4559999999999036
+aF1128.263
+aa(lp659
+S' in.   The  hypothetical  rule  set  will  play  Y '
+p660
+aF3.7740000000001146
+aF1132.037
+aa(lp661
+S' after  this  history  occurs.   The  starting  rule '
+p662
+aF3.8029999999998836
+aF1135.84
+aa(lp663
+S' set  will  play  Y  after  this  history  occurs. '
+p664
+aF2.4880000000000564
+aF1138.328
+aa(lp665
+S' You  will  be  able  to  make  changes  to  your  Hypothetical '
+p666
+aF8.674999999999955
+aF1147.003
+aa(lp667
+S' Rules,  and  your  Starting  Rules,  for  the  duration '
+p668
+aF3.20900000000006
+aF1150.212
+aa(lp669
+S' of  the  10  minutes.  After  the  ten  minutes  are '
+p670
+aF3.7590000000000146
+aF1153.971
+aa(lp671
+S' up,  rules  that  are  on  the  Starting  Rules  side '
+p672
+aF2.280999999999949
+aF1156.252
+aa(lp673
+S' will  be  your  starting  rules  for  the  experiment. '
+p674
+aF1.9110000000000582
+aF1158.163
+aa(lp675
+S'  Payoffs   At  the  end  of  the  experiment,  you '
+p676
+aF5.6099999999999
+aF1163.773
+aa(lp677
+S' will  be  paid  in  cash.   Your  payoff  at  the '
+p678
+aF3.242000000000189
+aF1167.015
+aa(lp679
+S' end  of  the  experiment  will  be  the  sum  of  the '
+p680
+aF2.224999999999909
+aF1169.24
+aa(lp681
+S' payoffs  for  each  period.   Reminder,  the  exchange '
+p682
+aF3.6790000000000873
+aF1172.919
+aa(lp683
+S' rate  today  is  1250  Francs  equals  1  dollar. '
+p684
+aF4.035999999999831
+aF1176.955
+aa(lp685
+S'  Practice  Match  Next,  there  will  be  a  practice '
+p686
+aF5.292000000000144
+aF1182.247
+aa(lp687
+S' match  to  make  sure  that  you  are  comfortable '
+p688
+aF1.696999999999889
+aF1183.944
+aa(lp689
+S' with  the  interface.  It  is  important  to  note '
+p690
+aF4.134999999999991
+aF1188.079
+aa(lp691
+S' that  in  this  practice  match,   you  will  NOT '
+p692
+aF2.0830000000000837
+aF1190.162
+aa(lp693
+S' be  paid  for  the  choices  made.   the  payoffs '
+p694
+aF3.1109999999998763
+aF1193.273
+aa(lp695
+S' are  all  listed  as  0,  so  that  you  can  focus '
+p696
+aF2.6310000000000855
+aF1195.904
+aa(lp697
+S' on  getting  comfortable  with  the  interface,  rather '
+p698
+aF2.619999999999891
+aF1198.524
+aa(lp699
+S' than  focusing  on  the  payoffs.   You  are  NOT '
+p700
+aF3.6690000000000964
+aF1202.193
+aa(lp701
+S' paired  with  another  participant.  Your  opponent '
+p702
+aF3.2350000000001273
+aF1205.428
+aa(lp703
+S' for  the  practice  match  is  a  computer  that  is '
+p704
+aF3.6469999999999345
+aF1209.075
+aa(lp705
+S' playing  RANDOMLY. '
+p706
+aF0.7809999999999491
+aF1209.856
+aa.

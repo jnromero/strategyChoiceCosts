@@ -271,6 +271,7 @@ function drawConstructor(type){
 
     constructorIn2.appendChild(constructorIn);
     constructorDiv.appendChild(constructorIn2);
+    document.getElementById("mainDiv").appendChild(constructorDiv)
     $("#mainDiv").append(constructorDiv);
     drawConstructorSubmitButton(type);
     if(thisStatus["page"]=="quiz"){
@@ -362,7 +363,6 @@ function drawDefault(type){
     }
 
 }
-
 
 function drawPostMatch(){
     var noButtonOverlay = createDiv("noButtonOverlay");
@@ -924,6 +924,7 @@ function drawConstructorSubmitButton(type){
 
 
 function drawHistory(type){
+    console.log("drawHistory",type)
     historyDiv=createDiv(type+"_history");
     historyDiv.className="history";
     historyDivIN=createDiv(type+"_historyIN");
@@ -1210,9 +1211,12 @@ function alreadySubmitted(message){
 }
 
 function drawNextAction(divName){
+    console.log("nextAction")
     divID=divName+'_history_square_'+(window.currentPeriod+1)+'_0';
     removeListeners(divID);
     nextActionSquare=document.getElementById(divID);
+    console.log(window.currentPeriod)
+    console.log(divID)
     if(nextActionSquare!=null){
         if(window.state["page"]=="instructions"){
             nextActionSquare.className=actionFromInteger(window.nextPeriodPlay)+"Square square proposed";
@@ -1247,72 +1251,6 @@ function submitChoice(e,divID){
     sock.send(JSON.stringify(message));
 }
 
-function moveTimer(timerName){
-    timerSeconds=window.timer-((new Date()).getTime()-window.timerCheck)/1000;
-    if(timerSeconds>0){
-        var pretty = makeTimePretty(timerSeconds);
-        if(document.getElementById(timerName)!=null){document.getElementById(timerName).innerHTML=pretty;}
-        var pf = partial(moveTimer,timerName);
-        setTimeout(pf,1000);
-    }
-    else{
-        if(document.getElementById(timerName)!=null){
-            document.getElementById(timerName).innerHTML="0:00";
-        }
-    }
-}
-
-
-function moveSelfTimer(timerName){
-    timerSeconds=window.selfTimer-((new Date()).getTime()-window.timerCheck)/1000;
-    if(timerSeconds>0){
-        var pretty = makeTimePretty(timerSeconds);
-        if(document.getElementById(timerName)!=null){document.getElementById(timerName).innerHTML=pretty;}
-        var pf = partial(moveSelfTimer,timerName);
-        setTimeout(pf,1000);
-    }
-    else{
-        if(document.getElementById(timerName)!=null){
-            document.getElementById(timerName).innerHTML="0:00";
-        }
-    }
-}
-
-
-
-// function changeSliderSpeedODL(divName){
-//     console.log("changeSliderSpeed");
-//     newTime=1000000*window.speed;
-// document.getElementById("slider_allHistoryDiv").style.transform="translate3d(19500px,0px,0px)";
-// document.getElementById("slider_allHistoryDiv").style.transition="all 100s linear";
-// setTimeout(function(){document.getElementById("slider_allHistoryDiv").style.transform="translate3d(19300px,0px,0px)";},20);
-
-//     // document.getElementById(divName+"_allHistoryDiv").style.transform="translate3d(-200px,0px,0px)";
-//     // document.getElementById(divName+"_allHistoryDiv").style.transition="all 5s linear";
-//     // setTimeout(function(){document.getElementById(divName+"_allHistoryDiv").style.transform="translate3d(-250px,0px,0px)";},2000);
-// }
-
-//drawSlider();
-// window.setTimeout(startSlider,10);
-// window.setInterval(changeSliderSpeed,500);
-
-
-// constructor=[["w","y"],["w","y"],["w","y"],["y","q"],["w","q"],["w","y"],["w","y"],["w","y"],["y","q"],["w","q"],["w","w"],["y","w"],["w","y"],["y","q"],["w","q"],["y"]]
-// constructor=[["w","w"],["y","w"],["w","y"],["y","q"],["w","q"],["y"]]
-// drawConstructor(constructor);
-// drawGame();
-
-// thispos=0;
-// timerSeconds=(new Date()).getTime()/1000;
-// for(k=0;k<100000;k++){
-//     if(1000*((new Date()).getTime()/1000-timerSeconds)>100){
-//         timerSeconds=(new Date()).getTime()/1000;
-//         thispos=thispos-10;
-//         document.getElementById('historyDiv').style.left=thispos+"px";
-//         document.getElementById('historyLabelsDiv').style.left=thispos+"px";
-//     }
-// }
-
 
 function parameters(incoming){
     //console.log("oparamersMEssage");
@@ -1328,7 +1266,7 @@ function parameters(incoming){
 }
 
 function reconnecting(incoming){
-  //console.log("reconnectingMessage");
+  // console.log("reconnectingMessage");
   window.state=incoming['status'];
   window.currentUnlockedTime=incoming['currentUnlockedTime'];
   window.unlockedTimeUpdate=(new Date()).getTime();
@@ -1364,7 +1302,7 @@ function drawMessage(message,fontColorIN){
 
     div2.appendChild(div3);
     div.appendChild(div2);
-    mainDiv.appendChild(div);
+    document.getElementById("mainDiv").appendChild(div);
 
 }
 
@@ -1510,7 +1448,8 @@ function drawHypothetical(){
 
     var topInfoLeft=createDiv("topInfoLeft");
     var topInfoMiddle=createDiv("topInfoMiddle");
-    topInfoMiddle.innerHTML="The match will start in <time id='timer'>5:00</time>";
+    topInfoMiddle.innerHTML="The match will start in <time id='everyoneTimer'>5:00</time>";
+    moveTimer("everyoneTimer");
     $("#mainDiv").append(topInfoLeft);
     $("#mainDiv").append(topInfoMiddle);
 
@@ -1520,13 +1459,13 @@ function drawHypothetical(){
 
 
 
-function warningMessage(incoming){
+function drawWarning(incoming){
     thisDiv=createDiv("makeChoiceWarning");
     thisDiv.className = "arrow-box-up";
-    thisDiv.innerHTML = "Choice will be made automatically in <br> <time id='warningTimer'>1:00</time>";
+    thisDiv.className = "arrow_box arrow_box_up";
+    thisDiv.innerHTML = "Choice will be made automatically in <br> <time id='"+window.state['subjectID']+"'>1:00</time>";
     document.getElementById("mainDiv").appendChild(thisDiv);
-    moveSelfTimer("warningTimer");
-    setTimeout(deleteWarningMessage,incoming['waitingTime']-200);
+    moveTimer(window.state['subjectID']);
 }
 
 function deleteWarning(){
@@ -1592,8 +1531,8 @@ function statusManager(){
     window.actionProfileFrequencies=[0,0,0,0];
     // window.stop=0;
     //drawMessage("Please take this time to review the payoff table.","#FF0000");
-    drawMessage("Please take this time to review the payoff table. <br> You will be able to make rules in <time id='timer'>1:00</time>","#FF0000");
-    moveTimer("timer");
+    drawMessage("Please take this time to review the payoff table. <br> You will be able to make rules in <time id='everyoneTimer'>1:00</time>","#FF0000");
+    moveTimer("everyoneTimer");
     drawGame("regular");
     document.getElementById("gameDiv").style.transform="scale(3)";
     document.getElementById("gameDiv").style.transformOrigin="bottom right";
@@ -1614,14 +1553,12 @@ function statusManager(){
     document.getElementById("regularDefaultDiv").style.transformOrigin="bottom left";
     document.getElementById("regularDefaultDiv").style.transition="all .5s ease-out";
     drawInfo();
-    drawMessage("Match will start in <time id='timer'>1:00</time><br>You must set your default rule before play can begin.","#FF0000");
-    moveTimer("timer");
+    drawMessage("Match will start in <time id='everyoneTimer'>1:00</time><br>You must set your default rule before play can begin.","#FF0000");
+    moveTimer("everyoneTimer");
   }
   else if(thisStatus["page"]=="hypothetical"){
-    console.log(thisStatus);
     clearAll();
     drawIfNeeded("hypothetical");
-    moveTimer("timer");
   }
   else if(thisStatus["page"]=="preMatch"){//prematch
     clearAll();
@@ -1631,10 +1568,11 @@ function statusManager(){
     drawIfNeeded("regularConstructorDiv");
     drawIfNeeded("regularRuleList");
     drawInfo();
-    drawMessage("Match will start in <time id='timer'>1:00</time>","#FF0000");
-    moveTimer("timer");
+    drawMessage("Match will start in <time id='everyoneTimer'>1:00</time>","#FF0000");
+    moveTimer("everyoneTimer");
   }
   else if(thisStatus["page"]=="game"){
+    clearAll();
     drawIfNeeded("gameDiv");
     drawIfNeeded("defaultDiv");
     drawIfNeeded("regularConstructorDiv");
@@ -1655,6 +1593,9 @@ function statusManager(){
     else if(thisStatus["locked"]=="yes"){
         drawLock();
         drawUnlockButton();
+    }
+    if(thisStatus["warning"]=="yes"){
+        drawWarning();
     }
     drawNextAction("regular");
   }
@@ -1749,7 +1690,7 @@ function updateRules(incoming){
   if(ruleType=="regular" && window.state['page']=="game"){
       drawNextAction("regular");
       type=incoming['ruleType'];
-      highlightRule(ruleType,incoming['nextPeriodRule'],incoming['nextPeriodRuleLength']);
+      //highlightRule(ruleType,incoming['nextPeriodRule'],incoming['nextPeriodRuleLength']);
   }
 
     if(thisStatus["page"]=="game" && thisStatus["stage"]=="defaultNotSet"){
@@ -1793,6 +1734,7 @@ function quizQuestion(incoming){
 
 
 function newHistory(incoming){
+    console.log("NEWHSIT")
   window.currentHistory=incoming['history'];
   window.currentPayoffHistory=incoming['payoffHistory'];
   window.currentPeriod=incoming['period'];
@@ -1845,6 +1787,7 @@ function newHistory(incoming){
   window.serverTime=incoming['elapsed']*1000;
   //statusManager();
     drawInfo();
+    console.log("NEWHSIT")
 }
 
 function highlightPayoffs(){
@@ -2173,17 +2116,6 @@ function newPeriodTest(){
   document.getElementById("regular_historyIN").style.transition="all .5s ease";
   document.getElementById("regular_historyIN").style.transitionDelay=".5s";
     window.instructionDemoIndex=window.instructionDemoIndex+1;
-}
-
-
-function messageManager(msg){
-  var incoming = JSON.parse(msg);
-  //console.log(incoming['type']);
-  window.state=incoming['status'];
-  window.timer=incoming['timer'];
-  window.selfTimer=incoming['selfTimer'];
-  window.timerCheck=(new Date()).getTime();
-  eval(incoming['type']+'(incoming);');
 }
 
 

@@ -5,7 +5,7 @@ import json
 import random
 import math
 from operator import itemgetter
-
+import os
 from twisted.internet import reactor
 from twisted.internet import task
 import pickle
@@ -17,10 +17,11 @@ class fakeClient():
       self.subjectID=sid
 
 class experimentClass():
-   def __init__(self,config):
+   def __init__(self):
       "do init stuff"
-      self.config=config
       self.setParameters()
+      self.data['matchType']="regular"
+      self.monitorTaskList=['loadInstructions','startQuiz','startExperiment','startHypothetical']
    # - store data in self.data[subjectID] which is a Subject object (defined below)
    # - send messages like self.customMessage(subjectID,msg)
    # - list of all subjects at self.data['subjectIDs']
@@ -54,9 +55,9 @@ class experimentClass():
 
       #testing
       self.data['showPayoffTime']=6
-      self.data['hypotheticalPeriodLength']=600
+      self.data['hypotheticalPeriodLength']=10
       self.data['totalMatches']=10#not including practice
-      self.data['preStageLengths']=[20,60,60,60,60,60,60,60,60,60,60,60]
+      self.data['preStageLengths']=[20,5,60,60,60,60,60,60,60,60,60,60]
       self.data['freeStageLengths']=[30]+[46, 36, 52, 85, 60, 7, 68, 41, 44, 42]
 
 
@@ -114,7 +115,9 @@ class experimentClass():
          self.data[sub2].roles[self.data['currentMatch']]=1
          self.data[sub2].gameTable[self.data['currentMatch']]=self.reversePays(self.data['payoffs'])
 
-
+   def notAcceptingClientsAnymore(self):
+      self.setMatchingsByQuiz()
+      print("setMatchings2 - do nothing")
    def setMatchings(self):
       print("setMatchings - do nothing")
 
@@ -145,8 +148,10 @@ class experimentClass():
          self.data[sid].timeUntilWarning=50
       for sid in self.data['groups'][1]:
          self.data[sid].group="low"
-         self.data[sid].timePerQuestion=4
-         self.data[sid].timeUntilWarning=1
+         # self.data[sid].timePerQuestion=4
+         # self.data[sid].timeUntilWarning=1
+         self.data[sid].timePerQuestion=30
+         self.data[sid].timeUntilWarning=10
       print("matching set!!!!!!!")
 
 
@@ -194,7 +199,7 @@ class experimentClass():
       if self.data['currentMatch']>self.data['totalMatches']:
          self.gameOver()#game over
       else:
-         self.data['timer']=[time.time(),time.time(),self.data['preStageLengths'][self.data['currentMatch']]]
+         self.initializeTimer("everyoneTimer",self.data['timer'][2],self.startMatch)
          self.makeMatching()
          for sid in self.data['subjectIDs']:
             self.sendParameters(sid)
@@ -205,11 +210,6 @@ class experimentClass():
                self.data[sid].status={"page":"preMatch","match":self.data['currentMatch']}
             self.updateStatus(sid)
             self.updateRules(sid,"everything","regular")      
-      if self.data['matchType']=="trial":
-         self.nextPeriodCall=reactor.callLater(self.data['timer'][2],self.startMatch)
-      else:
-         self.nextPeriodCall=reactor.callLater(self.data['timer'][2],self.startMatch)
-         #self.startMatch()
 
 
 
@@ -220,7 +220,7 @@ class experimentClass():
             allDefaultRulesSet=0
       if allDefaultRulesSet==0:
          print("not all default Rules Set")
-         self.nextPeriodCall=reactor.callLater(2,self.startMatch)
+         self.initializeTimer("everyoneTimer",2,self.startMatch)
       else:
          self.data['startTime']=time.time()
          for sid in self.data['subjectIDs']:
@@ -240,14 +240,17 @@ class experimentClass():
          #self.tick()
 
 
-   def initializePeriodTimer(self,subjectID):
-      thisTime=self.data[subjectID].timePerQuestion
-      warningTime=self.data[subjectID].timeUntilWarning
-      self.data[subjectID].status['timer']=[time.time(),time.time(),thisTime]
-      if subjectID not in self.nonPickleData:
-         self.nonPickleData[subjectID]={}
-      self.nonPickleData[subjectID]['makeChoiceAutomatic']=reactor.callLater(thisTime,self.confirmChoice,{},self.clientsById[subjectID])
-      self.nonPickleData[subjectID]['sendAutomaticWarning']=reactor.callLater(warningTime,self.sendWarning,subjectID)
+   def initializePeriodTimer(self,sid):
+      warningTime=self.data[sid].timeUntilWarning
+      self.initializeTimer(sid,warningTime,self.showWarning,sid)
+      self.data[sid].status['warning']="no"
+      self.updateStatus(sid)
+
+   def showWarning(self,sid):
+      remainingTime=self.data[sid].timePerQuestion-self.data[sid].timeUntilWarning
+      self.initializeTimer(sid,remainingTime,self.confirmChoiceFromPython,sid)
+      self.data[sid].status['warning']="yes"
+      self.updateStatus(sid)
 
 
 
@@ -288,6 +291,12 @@ class experimentClass():
          else:
             self.startPreMatch()
 
+
+
+   def confirmChoiceFromPython(self,sid):
+      thisClient=fakeClient(sid)
+      self.confirmChoice({},thisClient)
+
    def confirmChoice(self,message,client):
       #print "Confi Choice",client.subjectID
       subjectID=client.subjectID
@@ -296,14 +305,9 @@ class experimentClass():
          self.data[subjectID].status['locked']="yes";
          self.lockRules(message,client)
 
+      self.cancelTimerFunction(subjectID)
 
-      if subjectID in self.nonPickleData:
-         if 'makeChoiceAutomatic' in self.nonPickleData[subjectID]:
-            if self.nonPickleData[subjectID]['makeChoiceAutomatic'].cancelled==0 and self.nonPickleData[subjectID]['makeChoiceAutomatic'].called==0:
-               self.nonPickleData[subjectID]['makeChoiceAutomatic'].cancel()
-         if 'sendAutomaticWarning' in self.nonPickleData[subjectID]:
-            if self.nonPickleData[subjectID]['sendAutomaticWarning'].cancelled==0 and self.nonPickleData[subjectID]['sendAutomaticWarning'].called==0:
-               self.nonPickleData[subjectID]['sendAutomaticWarning'].cancel()
+
       self.data[subjectID].currentPeriod=len(self.data[subjectID].history[self.data['currentMatch']])
       if self.data[subjectID].currentPeriod==0:
          #use first period rule
@@ -321,6 +325,7 @@ class experimentClass():
       self.data[subjectID].status["confirmed"]="yes"
       self.updateStatus(subjectID)
       self.checkPartner(subjectID)
+      self.sendChoices(subjectID,'regular')
 
 
    def checkPartner(self,subjectID):
@@ -365,6 +370,7 @@ class experimentClass():
          self.initializePeriodTimer(subjectID)
          #self.data[subjectID].status["locked"]="yes"
          self.updateStatus(subjectID)
+         self.sendChoices(subjectID,'regular')
       else:
          #end of match
          # if len(self.data[subjectID].lockPeriods)>0:
@@ -380,6 +386,7 @@ class experimentClass():
       msg['type']="warningMessage"
       msg['waitingTime']=1000*(self.data[subjectID].timePerQuestion-self.data[subjectID].timeUntilWarning)
       self.customMessage(subjectID,msg)
+      self.sendChoices(subjectID,'regular')
 
    def sendChoices(self,sid,sendType):     
       msg={}
@@ -423,11 +430,14 @@ class experimentClass():
       self.data['payoffs']=[[1,5],[2,6],[3,7],[4,8]]
       self.data['payoffs']=[[48,48],[12,50],[50,12],[25,25]]
       self.data['payoffs']=[[38,38],[12,50],[50,12],[25,25]]
-      self.showPayoffs()
-      #reactor.callLater(.1,self.tester)
+      # self.showPayoffs()
+      reactor.callLater(.1,self.tester)
 
    def tester(self):
       msg={}
+      for sid in self.data['subjectIDs']:
+         self.data[sid].status={"page":"defaultNotSet","match":1}
+         self.updateStatus(sid)
       for sid in self.data['subjectIDs']:
          thisClient=self.clientsById[sid]
          msg['thisRule']=['firstPeriod',0]
@@ -435,6 +445,7 @@ class experimentClass():
          msg['thisRule']=['default',0]
          self.setRulesBeginning(msg,thisClient)
          #self.setFirstPeriod(msg,thisClient)
+      reactor.callLater(.2,self.startPreMatch)
 
 
    def addHypHistory(self,message,client):
@@ -515,23 +526,19 @@ class experimentClass():
 
 
    def showPayoffs(self):
-      #currentTime,startTime,totalTime,jsTime
-      self.data['timer']=[time.time(),time.time(),self.data['showPayoffTime']]
+      self.initializeTimer("everyoneTimer",self.data['showPayoffTime'],self.showHypothetical)
       for sid in self.data['subjectIDs']:
          self.sendParameters(sid)
          self.data[sid].status={"page":"payoffsOnly"}
          self.updateStatus(sid)
-      reactor.callLater(self.data['showPayoffTime'],self.showHypothetical)
 
 
 
    def showHypothetical(self):
-      self.data['timer']=[time.time(),time.time(),self.data['hypotheticalPeriodLength']]
+      self.initializeTimer("everyoneTimer",self.data['hypotheticalPeriodLength'],self.startPreMatch)
       for sid in self.data['subjectIDs']:
          self.data[sid].status={"page":"defaultNotSet","match":1}
          self.updateStatus(sid)
-      print("call reactor later to start play")
-      self.nextPeriodCall=reactor.callLater(self.data['hypotheticalPeriodLength'],self.startPreMatch)
 
 
    def unlockRules(self,message,client):
@@ -548,6 +555,7 @@ class experimentClass():
       self.data[sid].freeLock=0
       self.sendChoices(sid,'regular')
       self.updateStatus(sid)
+      self.sendChoices(sid,'regular')
 
    def lockRules(self,message,client):
       sid=client.subjectID
@@ -556,6 +564,7 @@ class experimentClass():
       self.sendChoices(sid,'regular')
       self.data[sid].status['locked']="yes";
       self.updateStatus(sid)
+      self.sendChoices(sid,'regular')
 
 
 
@@ -781,11 +790,7 @@ class experimentClass():
                msg['nextPeriodRule']=self.data[subjectID].lastRule
                msg['nextPeriodRuleLength']=self.data[subjectID].lastRuleLength
 
-
-
-
       self.customMessage(subjectID,msg)
-
 
    def findRuleClassByList(self,ruleIN,subjectID):
       out=-1
@@ -864,6 +869,71 @@ class experimentClass():
       self.updateRules(subjectID,"everything",rulesType)
 
 
+   def experimentDemo(self,sid,viewType):
+      if viewType=="firstMatch" or viewType=="regular":
+         self.data['matchType']="regularDemo"
+         thisClient=self.clientsById[sid]
+         self.data[sid].setFirstPeriodRule(random.choice([0,1]),0,0,'regular')
+         self.data[sid].setDefaultRule(random.choice([0,1]),0,0,'regular')
+         self.data['currentMatch']=0
+         self.data['payoffs']=[[38,38],[12,50],[50,12],[25,25]]
+         self.data['preStageLengths']=[20,20,60,60,60,60,60,60,60,60,60,60]
+         for k in range(20):
+            self.data[sid].gameTable[k]=self.data['payoffs']
+
+         try:
+            self.nextPeriodCall.cancel()
+         except:
+            pass
+
+         try:
+            self.nonPickleData[sid]['makeChoiceAutomatic'].cancel()
+         except:
+            pass
+
+         try:
+            self.nonPickleData[sid]['sendAutomaticWarning'].cancel()
+         except:
+            pass
+
+         self.startPreMatch()
+
+
+      # msg={}
+      # msg['type']='startExperiment'
+      # msg['title']='Start Experiment'
+      # msg['status']=''
+      # msg['index']=0
+
+
+      # if 'pays' not in self.data:
+      #    self.data['pays']={}
+      #    self.data['matching']={}
+      #    self.data['supergameLengths']={}
+      #    self.data['order']={}
+      #    self.data['roles']={}
+      #    for match in range(10):
+      #       self.data['pays'][match]={}
+      #       self.data['matching'][match]={}
+      #       self.data['order'][match]={}
+      #       self.data['roles'][match]={}
+      #       self.data['order'][match]["randomPlayer"]=["U","D"]
+      #       self.data['roles'][match]["randomPlayer"]=1
+      #       self.data['supergameLengths'][match]=30
+
+      # for match in range(10):
+      #    self.data['pays'][match][sid]={1:{1:[30,30],2:[10,40]},2:{1:[40,10],2:[20,20]}}
+      #    self.data['matching'][match][sid]=["randomPlayer"]
+      #    # self.data['matching'][match]["randomPlayer"]=[sid]
+      #    self.data['order'][match][sid]=["U","D"]
+      #    self.data['roles'][match][sid]=0
+
+      # self.data['currentMatch']=1
+      # self.data[sid].newMatch(1)
+      # self.sendParameters(sid)
+      # self.data[sid].getStatus()
+      # self.updateStatus(sid)
+
    def displayDemo(self,viewType,subjectID):
       if viewType=="quiz":
          msg={}
@@ -919,8 +989,6 @@ class experimentClass():
 
 class subjectClass():
    def __init__(self):
-      self.status={"page":"generic","message":["Loading..."],"stage":"initializing"}
-      #self.status={"page":"generic","message":["Please read, sign, and date your consent form. <br> You may read over the instructions as we wait to begin."]}
       self.history={}
       self.hypHistories={}
       self.opponentHistory={}
@@ -948,6 +1016,7 @@ class subjectClass():
       self.resetAllRules()
       self.timePerQuestion=60
       self.timeUntilWarning=50
+      self.status={"page":"generic","message":["Please read, sign, and date your consent form. <br> You may read over the instructions as we wait to begin."]}
 
    def resetAllRules(self):
       self.oldRules.append(self.allRules)
@@ -1193,7 +1262,10 @@ class monitorClass():
 
 
 if __name__ == "__main__":
-   # stuff only to run when not called via 'import' here
-   "main()"
+   import imp
+   filename="../../steep/code/python/server.py"
+   completePathToServerDotPyFile=os.path.abspath(filename) 
+   server = imp.load_source('server',completePathToServerDotPyFile)
+   #python experiment.py -l local -o True -s False
 
 

@@ -1,0 +1,182 @@
+
+		[[2]] Welcome to [[1]] the Vernon Smith [[1]] Experimental Economics [[1]] Laboratory. [[slnc 1000]] [[slnc 250]] Please carefully watch these video instructions and follow along on the paper copy at your desk. [[slnc 1000]] [[slnc 500]]
+
+		 
+
+ [[slnc 500]] [[3]] Experiment Overview [[slnc 500]] [[slnc 500]] 
+ You are about to participate in an [[1]] experiment in the economics of decision-making. [[slnc 1000]] If you listen carefully, [[1]] you could earn a large amount of money, that will be paid to you in cash, in private, at the end of the experiment. [[slnc 1000]] 
+ 
+ It is important [[1]] that you remain silent and do not look at other people's work. [[slnc 1000]] If you have any questions, or need any assistance of any kind, [[1]] please raise your hand and an experimenter will help you out. [[slnc 1000]] [[3]] During the experiment, [[1]] do not talk, laugh or exclaim out loud and be sure to [[1]] keep your eyes on your screen only. [[slnc 1000]] In addition, [[1]] please turn off your cell phones, etc. [[slnc 1000]] and put them away during the experiment. [[slnc 1000]] Anybody that violates these rules will be asked to leave and will not be paid. [[slnc 1000]] [[1]] We expect, and appreciate your cooperation. [[slnc 1000]] 
+
+ [[slnc 500]] [[3]] Agenda [[slnc 500]] 
+ 
+ [[1]] 
+1. [[slnc 1000]] [[slnc 500]] We will first go over the instructions. [[slnc 1000]] [[1]] 
+2. [[slnc 1000]] [[slnc 500]] Then we will have a practice match to learn the interface. [[slnc 1000]] [[1]] 
+3. [[slnc 1000]] [[slnc 500]] Next, there will be a quiz with 10 questions to make sure everyone understands the instructions. [[slnc 1000]] [[slnc 1000]] 
+ [[1]] 
+All 10 questions will refer to these instructions so you should follow them carefully. [[slnc 1000]] [[1]] 
+If you answer all questions correctly you will earn 10 dollars. [[slnc 1000]] [[slnc 1000]] [[1]] 
+If you answer at least one question incorrectly you will earn nothing, at which point you will not need to answer any more questions. [[slnc 1000]] [[slnc 1000]] [[1]] 
+You will have 10 minutes to answer the 10 questions. [[slnc 1000]] 
+ [[1]] 
+4. [[slnc 1000]] [[slnc 500]] After the quiz, you will have 10 minutes to prepare for the experiment. [[slnc 1000]] [[3]] In the experiment you will be working with a fictitious currency called Francs. [[slnc 1000]] You will be paid in US Dollars at the end of the experiment. [[slnc 1000]] [[1]] The exchange rate today is: [[slnc 500]] 1250 Francs equals 1 USD. [[slnc 1000]] [[slnc 4000]] 
+ 
+
+ [[slnc 500]] [[3]] Experiment Details [[slnc 500]] 
+ 
+ 
+ [[1]] This experiment consists of ten matches. [[slnc 1000]] 
+ [[1]] Prior to start of the experiment, all participants may be split into two groups. [[slnc 1000]] The groups will stay fixed and you will know number of participants in your group throughout the experiment. [[slnc 1000]] 
+ [[1]] At the beginning of each match, you will be paired randomly with one other participant from your group. [[slnc 1000]] You will remain matched with this same participant until the end of the match, but then will be paired with another randomly selected participant from your group in the following match. [[slnc 1000]] 
+Each match will have the same structure, [[1]] but may contain different numbers of periods. [[slnc 1000]] 
+ [[1]] You will remain anonymous throughout the experiment. [[slnc 1000]] You will not know the identity of the participant that you are paired with, and they will not know your identity. [[slnc 1000]] [[1]] The choices made by you, and the participant you are paired with, have no effect on the payoffs of participants in other pairs, and vice versa. [[slnc 1000]] Therefore, your payoff in a given match is based solely on the choices made by you and the participant that you are paired with. [[slnc 1000]] 
+ [[5]] Next, Let's Look at the experimental Interface [[slnc 2000]] 
+ 
+
+ [[slnc 500]] Specific Instructions for Each Period [[slnc 500]] 
+ 
+ 
+Your payoff in each period will depend on your choice and the choice of the participant that you are paired with. [[slnc 1000]] 
+You will choose one of two options, either W or Y. [[slnc 1000]] 
+You will be able to see the payoffs for each combination of choices for you and the participant that you are paired with. [[slnc 1000]] 
+These payoffs will remain the same throughout the entire experiment [[slnc 500]] (all matches) [[slnc 500]]. [[slnc 1000]] 
+ [[2]] The payoffs will be displayed in a table like this: [[slnc 500]] 
+ 	 
+ In this example above, the rows are the following: [[slnc 500]] 
+ 
+ [[1]] Row #1 - Your choice [[slnc 500]] [[slnc 500]] (either W or Y in this example) [[slnc 500]] [[slnc 500]] 
+ [[1]] Row #2 - Other's choice [[slnc 500]] [[slnc 500]] (either W or Y in this example) [[slnc 500]] [[slnc 500]]. [[slnc 1000]] 
+ [[1]] Row #3 - Your payoff. [[slnc 1000]] 
+ [[1]] Row #4 - Other's payoff. [[slnc 1000]] 
+ [[1]] Row #5 - Total number of times that that combination has been played this match. [[slnc 1000]] 
+ Examples: [[slnc 500]] 
+In the table above, [[1]] if you choose W and [[1]] the participant that you are paired with chooses Y, then [[1]] you receive a payoff of 3, and [[1]] the participant that you are paired with receives a payoff of 4. [[slnc 1000]] [[1]] This combination has occurred 19 times so far this match. [[slnc 1000]] 
+ [[1]] If you choose W and [[1]] the participant that you are paired with chooses W, then [[1]] you receive a payoff of 7, and [[1]] the participant that you are paired with receives a payoff of 8. [[slnc 1000]] [[1]] This combination has occurred 6 times so far this match. [[slnc 1000]] 
+ [[1]] If you choose Y and [[1]] the participant you are paired with chooses Y, then [[1]] you receive a payoff of 1, and [[1]] the participant that you are paired with receives a payoff of 2. [[slnc 1000]] [[1]] This combination has occurred 6 times so far this match. [[slnc 1000]] 
+ 
+
+ [[slnc 500]] [[3]] History [[slnc 500]] 
+ 
+ 
+As the match progresses, you will see the history of play across the top of the screen, displayed like this: [[slnc 500]] [[2]] 
+This history displays [[1]] the period [[slnc 500]] (labeled Period) [[slnc 500]], [[1]] your choice in that period [[slnc 500]] (labeled My Choice ) [[slnc 500]], [[1]] the choice of the participant you are paired with in that period [[slnc 500]] (labeled Other's Choice ) [[slnc 500]], and [[1]] the payoff for that period [[slnc 500]] (labeled My Payoff) [[slnc 500]]. [[slnc 1000]] 
+For example, in the above history, [[1]] in period 39, [[1]] you played W, [[1]] the participant you are paired with played Y, [[1]] and you received a payoff of 3. [[slnc 1000]] 
+ 
+
+ [[slnc 500]] [[2]] Rules [[slnc 500]] 
+ 
+ 
+Rather than directly making choices of W or Y, you will develop a set of rules which will automatically make choices for you. [[slnc 1000]] 
+ [[3]] The set of rules will appear in the middle of the screen. [[slnc 1000]] 
+ [[3]] You will be able to construct rules using the rule constructor at the bottom of the screen. [[slnc 1000]] 
+ [[3]] A rule consists of two parts: [[slnc 500]] 
+ 
+ [[1]] Input Sequence - A sequence of choices made by you and the participant you are paired with. [[slnc 1000]] 
+ [[2]] Output - A choice to be made by you after the input sequence occurs. [[slnc 1000]] 
+ 
+ [[2]] Some example rules are displayed below: [[slnc 500]] 
+ [[1]] For example, Rule #2 has an input sequence of [[1]] [[slnc 500]] (Y,Y) [[slnc 500]], [[1]] [[slnc 500]] (W,W) [[slnc 500]], [[1]] [[slnc 500]] (Y,W) [[slnc 500]] and an output of [[1]] W. [[slnc 1000]] This means that if you have played [[1]] Y, W, and then Y in the last three periods, and the participant that you are paired with has played [[1]] Y, W, and then W, this rule will lead you to play [[1]] W in the next period. [[slnc 1000]] 
+As play progresses you will develop a set of rules that will be used to make your choices. [[slnc 1000]] Play will proceed as follows: [[slnc 500]] 
+ 
+Each period, [[1]] your set of rules will select the choice to be made next period. [[slnc 1000]] 
+The [[1]] rule that will be used to make the choice will be highlighted. [[slnc 1000]] 
+The corresponding [[1]] sequence in the history will be highlighted. [[slnc 1000]] 
+A [[1]] preview of the choice to be made next period will be shown as a lightly colored cell on the history of play. [[slnc 1000]] 
+In order to move to the next period, you have to confirm the choice by clicking on the corresponding history cell. [[slnc 1000]] [[1]] Once you have confirmed your choice, the light color will turn to a regular color, and you may need to wait for the participant that you are paired with to make their choice. [[slnc 1000]] [[slnc 5000]] [[1]] 
+ 
+There are several ways that you can modify your rules during the experiment. [[slnc 1000]] 
+ 
+1. [[slnc 1000]] [[slnc 500]] [[1]] First, you can use the rule constructor in the bottom center of the screen. [[slnc 1000]] [[1]] Press the plus button to add more columns, [[1]] or one of the minus buttons to subtract columns. [[slnc 1000]] Click on the question marks to fill in the boxes. [[slnc 1000]] When you click on a question mark, [[1]] either a W or a Y will appear. [[slnc 1000]] If you click on a W, [[1]] it will switch to a Y, and if you click on a Y, [[1]] it will switch to a W. [[slnc 1000]] [[1]] Once you have completely filled in the rule [[slnc 500]] (leaving no question marks) [[slnc 500]], [[1]] the add rule button will appear, [[1]] and the rule can be added to your set. [[slnc 1000]] 
+2. [[slnc 1000]] [[slnc 500]] Second, if you look at a rule in the set, [[1]] you will notice a green copy button, [[1]] and a red delete button. [[slnc 1000]] If you [[1]] press the green copy button, it will copy the rule down to the constructor, [[1]] and you will be able to create a similar rule. [[slnc 1000]] [[slnc 2000]] If you [[1]] press the red delete button, it will delete the rule from the [[1]] set. [[slnc 1000]] [[slnc 2000]] 
+3. [[slnc 1000]] [[slnc 500]] Since your rule set needs to make a single choice each period, it is not possible to have two rules with the same input sequence, but with different outputs. [[slnc 1000]] [[1]] If you create a rule that has the same input sequence but a different output, you will get an error that [[1]] says 'Conflicting rule in set", and a [[1]] button that says 'Switch Rule" will appear. [[slnc 1000]] If you press this button, it will delete the [[1]] conflicting rule from the rule set, [[1]] and add the rule from the [[1]] constructor. [[slnc 1000]] [[slnc 2000]] 
+ 
+The length of the rule is measured by the length of the input sequence. [[slnc 1000]] 
+So [[1]] rule #2, and [[1]] rule #3 have a length of 3, and [[1]] rule #4 has a length of 2. [[slnc 1000]] 
+A rule of length n is said to fit the history if the input sequence matches the last n periods of the history. [[slnc 1000]] 
+For example, since the last three periods of play in the above history [[1]] [[slnc 500]] (periods 42 through 44) [[slnc 500]] have been [[1]] [[slnc 500]] ( Y, Y ) [[slnc 500]], [[1]] [[slnc 500]] ( W, W ) [[slnc 500]], and [[1]] [[slnc 500]] ( Y, W ) [[slnc 500]], and that sequence is also the input for [[1]] rule #2, [[slnc 1000]] then rule #2 is said to fit the history. [[slnc 1000]] Similarly, given the above history, we can see that [[1]] rule #4 fits the history, [[slnc 1000]] but [[1]] rule #3 does not fit the history. [[slnc 1000]] 
+If more than one rule fits the history, then the rule with the longer length will determine the choice. [[slnc 1000]] 
+For example, given the above history since both [[1]] rule #2, and [[1]] rule #4 fit the history, [[1]] rule #2 will be used to make your choice, since it is longer. [[slnc 1000]] Therefore, given the history, and the rule set, your choice next period will [[1]] be W, as prescribed by [[1]] rule #2. [[slnc 1000]] [[1]] [[slnc 2000]] 
+If no rules fit the history, then your [[1]] Default Rule will be selected. [[slnc 1000]] The default rule will only be used when no rules fit the history. [[slnc 1000]] [[1]] To select your default rule select either [[1]] W, or [[1]] Y, in the bottom left of your screen. [[slnc 1000]] 
+Additionally, you have to select the [[1]] First Period rule. [[slnc 1000]] The first period rule will only be used in the first period of the match. [[slnc 1000]] To select your first period rule select either [[1]] W, or [[1]] Y, in the bottom left of your screen. [[slnc 1000]] 
+ 
+
+ [[slnc 500]] [[1]] Additional Examples [[slnc 500]] 
+ 
+ 
+In the example above, [[1]] Rule #4, and [[1]] Rule #9, both fit the history. [[slnc 1000]] However, rule #9 will be selected because it is longer. [[slnc 1000]] Therefore, [[1]] W will be played in the next period, [[1]] as prescribed by rule #9. [[slnc 1000]] 
+For the example above, how can we change the rule set to ensure that Y is played next period. [[slnc 1000]] There are several ways to make changes to the rule set in order for Y to be played. [[slnc 1000]] First, you can delete [[1]] Rule #9, which would cause [[1]] Rule #4 to be the longest rule that fits the history, [[1]] and therefore would lead to Y being played next period. [[slnc 1000]] [[slnc 5000]] [[1]] Second, you [[1]] can add a longer rule that fits the history that has Y as the output. [[slnc 1000]] Since you added a longer rule that fits the history, that rule will be used to make the choice, and will select Y as the choice for next period. [[slnc 1000]] [[slnc 5000]] 
+ 
+
+ [[slnc 500]] [[4]] Number of Periods Per Match [[slnc 500]] 
+ 
+ 
+The number of periods in each match will be determined randomly using the following procedure. [[slnc 1000]] 
+ 
+At the end of each period, [[1]] a number will be chosen randomly from the set of numbers [[1]] {1,2,3, up to,48,49,50}, where each number is equally likely. [[slnc 1000]] 
+ [[1]] If the number is 1, then the match will end. [[slnc 1000]] 
+ [[1]] If the number is not 1, then the match will continue. [[slnc 1000]] 
+The number will always be placed back into the set after it is drawn. [[slnc 1000]] 
+Thus, in any period there is a 2 percent CHANCE that the match will end, and a 98 percent CHANCE that the match will have another period. [[slnc 1000]] 
+Therefore, [[1]] the expected number of periods in each match will be 50. [[slnc 1000]] 
+ [[2]] This procedure has been performed on the computer before the experiment. [[slnc 1000]] Therefore, you will not see the number selected from {1,2,3, up to,48,49,50}. [[slnc 1000]] 
+To ensure that the length of the match is not dependent on your play, the number of periods for each match has be written on the board before the experiment, and will be uncovered at the end of the experiment. [[slnc 1000]] 
+ 
+ [[3]] Your choices will be determined [[1]] automatically from your rule set. [[slnc 1000]] However, you will need to confirm the [[1]] choice within an allotted amount of time. [[slnc 1000]] To confirm your choice, [[1]] click on your action for the next period within the history at the top of the screen. [[slnc 1000]] If you don't confirm the choice within the allotted amount of time, [[1]] then the choice will be confirmed automatically at the end of the allotted time. [[slnc 1000]] The experiment will not be able to proceed until everyone confirms their choices. [[slnc 1000]] 
+ [[1]] Everyone in your group will have the same amount of time allotted in each period. [[slnc 1000]] 
+ 
+
+ [[slnc 500]] [[3]] Additional Information about Matches [[slnc 500]] 
+ 
+ 
+During matches 1 through 10 you will be able to construct the set of rules to make your choices. [[slnc 1000]] 
+ [[1]] All of the rules in your set at the end of one match will remain in your set at the start of the next match. [[slnc 1000]] 
+ [[1]] Before the first match, [[1]] you will have 1 minute to look over the payoffs, [[1]] and an additional 10 minute to construct your rules. [[slnc 1000]] 
+ 
+
+ [[slnc 500]] [[5]] Editing your set of rules [[slnc 500]] 
+ 
+ 
+In the experiment today you will need to pay a cost to edit rules during the match. [[slnc 1000]] 
+More specifically, 
+ 
+ Before each match starts, you can make changes to your set of rules at no cost. [[slnc 1000]] 
+ After each match starts, if you want to make changes to your set of rules, [[1]] you must click the 'Unlock Rules" button. [[slnc 1000]] The cost for clicking the 'Unlock Rules" button is 250 Francs. [[slnc 1000]] The total cost incurred in all matches [[1]] will be displayed at the top of the screen in red. [[slnc 1000]] You will be able to edit your rules for the duration of one period. [[slnc 1000]] Once you are done editing your rules you may click the 'Lock Rules" [[1]] button. [[slnc 1000]] 
+If you don't want make changes to your set of rules, you may choose not to click the 'Unlock Rule" button. [[slnc 1000]] Then you will not incur the cost of 250 Francs. [[slnc 1000]] 
+In either case, you will need to confirm the choice made within the time limit set for each period. [[slnc 1000]] 
+If the time limit within a period reached, your rules will become locked, your choice will be confirmed automatically, and you will proceed to the next period. [[slnc 1000]] 
+ 
+ 
+
+ [[slnc 500]] [[5]] Starting Rules [[slnc 500]] 
+ 
+ 
+Prior to the start of the experiment you will have 10 minutes to construct your starting set of rules. [[slnc 1000]] 
+During that time, you will be presented with a split-screen view of of the construction screen. [[slnc 1000]] In this view, you will have an opportunity to test what your rule set will select as an output for a variety of hypothetical histories. [[slnc 1000]] 
+The split-screen will consist of two sides. [[slnc 1000]] [[1]] The right side is the Starting Rules side. [[slnc 1000]] Rules added to this side will be added to your rule set at the start of the first match. [[slnc 1000]] [[1]] The left side is the Hypothetical Rules side. [[slnc 1000]] Rules added to this side can be used to test to see what choices different combinations of rules will lead to. [[slnc 1000]] 
+ You will be able to move rules from the Hypothetical Rules side to the Starting Rules side [[1]] by clicking the blue move button. [[slnc 1000]] To delete rules from either side, [[1]] you need to click the delete button. [[slnc 1000]] 
+You will be able to see what choice [[1]] your hypothetical, and [[1]] your starting rule sets select as a choice for next period, for each of the hypothetical histories that you construct. [[slnc 1000]] 
+Notice that you will be able to construct, and store, multiple histories [[1]] at the same time. [[slnc 1000]] You can view one of the other hypothetical histories by clicking the [[1]] History # button at the top of the Hypothetical Rules side. [[slnc 1000]] You can add a new hypothetical history by clicking the [[1]] New button at the top of the Hypothetical Rules side. [[slnc 1000]] 
+ To construct a hypothetical history you will need to click on the [[1]] question marks in that history. [[slnc 1000]] You don't need to fill out the entire history to see what choice your rule set will make. [[slnc 1000]] Therefore, it is useful to start filling out the new histories from the most recent periods on the right side. [[slnc 1000]] 
+Let's look at an example. [[slnc 1000]] [[1]] Five periods of hypothetical History #4 have been filled in. [[slnc 1000]] [[1]] The hypothetical rule set will play W after this history occurs. [[slnc 1000]] [[1]] The starting rule set will play Y after this history occurs. [[slnc 1000]] [[slnc 5000]] 
+ [[1]] Let's look at another example. [[slnc 1000]] [[1]] 14 periods of hypothetical History #3 have been filled in. [[slnc 1000]] [[1]] The hypothetical rule set will play Y after this history occurs. [[slnc 1000]] [[1]] The starting rule set will play Y after this history occurs. [[slnc 1000]] [[slnc 5000]] 
+You will be able to make changes to your Hypothetical Rules, and your Starting Rules, for the duration of the 10 minutes. [[slnc 1000]] After the ten minutes are up, rules that are on the Starting Rules side will be your starting rules for the experiment. [[slnc 1000]] 
+ 
+
+ [[slnc 500]] [[4]] Payoffs [[slnc 500]] 
+ 
+ 
+ [[1]] At the end of the experiment, you will be paid in cash. [[slnc 1000]] 
+ [[1]] Your payoff at the end of the experiment will be the sum of the payoffs for each period. [[slnc 1000]] 
+ [[1]] Reminder, the exchange rate today is 1250 Francs equals 1 dollar. [[slnc 1000]] 
+ 
+
+ [[slnc 500]] [[3]] Practice Match [[slnc 500]] 
+ 
+ 
+Next, there will be a practice match to make sure that you are comfortable with the interface. [[slnc 1000]] 
+It is important to note that in this practice match, 
+ 
+ [[1]] you will NOT be paid for the choices made. [[slnc 1000]] 
+ [[1]] the payoffs are all listed as 0, so that you can focus on getting comfortable with the interface, rather than focusing on the payoffs. [[slnc 1000]] 
+ [[1]] You are NOT paired with another participant. [[slnc 1000]] Your opponent for the practice match is a computer that is playing RANDOMLY. [[slnc 1000]]
