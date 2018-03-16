@@ -21,7 +21,7 @@ class experimentClass():
       "do init stuff"
       self.setParameters()
       self.data['matchType']="regular"
-      self.monitorTaskList=['loadInstructions','startQuiz','startExperiment','startHypothetical']
+      self.monitorTaskList=['startExperiment','startHypothetical']
    # - store data in self.data[subjectID] which is a Subject object (defined below)
    # - send messages like self.customMessage(subjectID,msg)
    # - list of all subjects at self.data['subjectIDs']
@@ -55,7 +55,7 @@ class experimentClass():
 
       #testing
       self.data['showPayoffTime']=6
-      self.data['hypotheticalPeriodLength']=10
+      self.data['hypotheticalPeriodLength']=3600
       self.data['totalMatches']=10#not including practice
       self.data['preStageLengths']=[20,5,60,60,60,60,60,60,60,60,60,60]
       self.data['freeStageLengths']=[30]+[46, 36, 52, 85, 60, 7, 68, 41, 44, 42]
@@ -125,7 +125,7 @@ class experimentClass():
       goodQuiz=[]
       badQuiz=[]
       for sid in self.data['subjectIDs']:
-         if self.data[sid].quizEarnings>0:
+         if self.data[sid].quizEarnings>-10:
             goodQuiz.append(sid)
          else:
             badQuiz.append(sid)
@@ -251,6 +251,7 @@ class experimentClass():
       self.initializeTimer(sid,remainingTime,self.confirmChoiceFromPython,sid)
       self.data[sid].status['warning']="yes"
       self.updateStatus(sid)
+      self.sendChoices(sid,'regular')
 
 
 
@@ -304,7 +305,7 @@ class experimentClass():
          self.data[subjectID].status['animate']="no";
          self.data[subjectID].status['locked']="yes";
          self.lockRules(message,client)
-
+      self.data[subjectID].status['warning']="no"
       self.cancelTimerFunction(subjectID)
 
 
@@ -386,6 +387,7 @@ class experimentClass():
       msg['type']="warningMessage"
       msg['waitingTime']=1000*(self.data[subjectID].timePerQuestion-self.data[subjectID].timeUntilWarning)
       self.customMessage(subjectID,msg)
+      self.updateStatus(subjectID)
       self.sendChoices(subjectID,'regular')
 
    def sendChoices(self,sid,sendType):     
@@ -532,7 +534,8 @@ class experimentClass():
          self.data[sid].status={"page":"payoffsOnly"}
          self.updateStatus(sid)
 
-
+   def startHypothetical(self,message,client):
+      self.showHypothetical()
 
    def showHypothetical(self):
       self.initializeTimer("everyoneTimer",self.data['hypotheticalPeriodLength'],self.startPreMatch)
@@ -556,6 +559,7 @@ class experimentClass():
       self.sendChoices(sid,'regular')
       self.updateStatus(sid)
       self.sendChoices(sid,'regular')
+      self.data[sid].status['animate']="no";
 
    def lockRules(self,message,client):
       sid=client.subjectID
