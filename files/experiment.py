@@ -36,6 +36,7 @@ class experimentClass():
       #currentTime,startTime,totalTime,jsTime
       self.data['timer']=[0,0,0,0]
       self.data['payoffs']=[[0,0],[0,0],[0,0],[0,0]]
+      self.data['payoffs']=[[38,38],[12,50],[50,12],[25,25]]
       self.data['choices']=["1","2"]
       self.data['instructionsRunning']=0
       self.data['videoRunning']=0
@@ -535,11 +536,13 @@ class experimentClass():
          self.updateStatus(sid)
 
    def startHypothetical(self,message,client):
+      self.makeMatching()
       self.showHypothetical()
 
    def showHypothetical(self):
       self.initializeTimer("everyoneTimer",self.data['hypotheticalPeriodLength'],self.startPreMatch)
       for sid in self.data['subjectIDs']:
+         self.sendParameters(sid)
          self.data[sid].status={"page":"defaultNotSet","match":1}
          self.updateStatus(sid)
 

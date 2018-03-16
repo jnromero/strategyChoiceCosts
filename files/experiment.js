@@ -580,7 +580,12 @@ function drawListEntry(type,ruleIndex){
         listEntry.appendChild(listEntryButton3);
     }
 
-    thisRule=drawRule(type,constructor,0,ruleNumber,0);
+    if(window.nextPeriodRule==ruleNumber){
+        thisRule=drawRule(type,constructor,0,ruleNumber,1);
+    }
+    else{
+        thisRule=drawRule(type,constructor,0,ruleNumber,0);
+    }
     thisRule.style.transform="translate3d(60px,25px,0px)";
     if(ruleIndex<1){
         if(type=="hyp"){
@@ -1239,6 +1244,12 @@ function drawNextAction(divName){
         //     nextActionSquare.addEventListener("click",pf);
         // }
         highlightHistory(divName,window.nextPeriodRuleLength,window.currentPeriod);
+        if(nextPeriodRule==-1){
+            document.getElementById("regular_listEntry_firstPeriod").style.backgroundColor="rgba(0,255,0,.2)"
+        }
+        else{
+            document.getElementById("regular_listEntry_"+nextPeriodRule).style.backgroundColor="rgba(0,255,0,.2)"
+        }
     }
     $("#"+divID).off("click");
 
